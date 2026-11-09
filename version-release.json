@@ -22,7 +22,8 @@
     "macos": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-macOS.dmg",
     "ios-ipa": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa",
     "ios-ota": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa",
-    "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa"
+    "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa",
+    "ios-simulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS-Simulator.ipa"
   },
   "sha256_armeabi_v7a": "63b2af336057f8c895988b6fb2d368ce37099a5f196db359bf279e8a171c02da",
   "sha256_arm64": "4e7511844a20a4512e884c0f2bf06de133c091c2a1e5f9cb5eb20c1e14f971c5",
@@ -31,8 +32,9 @@
   "sha256_windows_portable": "52dd3a42a644802e186da9c54600e10a069d6dcbeb8eaf1c887929ac83ec47de",
   "sha256_windows_portable_extractor": "4f1b67838e95ca6aa2e4a865c79b1c351722db760fcedf5a4f848516c9e63c50",
   "sha256_windows_zip": "ab9fe9f43ea1769127310832d368deec9bb80f75336ed0116c198e3db9be1551",
-  "sha256_macos_dmg": "18508a8ca44fd781507f998ccc6e1a6717d3889c884a2d9841579222bac58b82",
-  "sha256_macos_zip": "dcee040bfe234b06404b2e9c15057c1a1813991440504c878edd09b43e8fb164",
-  "sha256_ios": "b522e657a6531c0f0cf80957cf0099b35be55b8652dd972c1821a944315c5ed7",
-  "sha256_ios_ipa": "b522e657a6531c0f0cf80957cf0099b35be55b8652dd972c1821a944315c5ed7"
+  "sha256_macos_dmg": "b0e6a048ce2de87d11f165a9b5faf5f68c9147006ba01e6ba2735b13ca00ffd3",
+  "sha256_macos_zip": "d8c6d526c3224b38023b60b3f966efe5f44940f5c486d86fcacdba1af107469c",
+  "sha256_ios": "3de0128c115abe4f6eab2f5b318b04057a8f5f84893899f60122dc0e2ce14ea0",
+  "sha256_ios_ipa": "3de0128c115abe4f6eab2f5b318b04057a8f5f84893899f60122dc0e2ce14ea0",
+  "sha256_ios_simulator": "35a5df158cd7d90e49ad824d4ce81e0dcd997d3352969aa8a948239cc306e8bd"
 }
