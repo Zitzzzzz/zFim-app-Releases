@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zFim - Tải Ứng Dụng Xem Phim Đa Nền Tảng</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #161920;
+      --accent: #f5c518;
+      --text: #ffffff;
+      --subtext: #8e95a5;
+      --border: #262a36;
+      --btn-hover: #e0b414;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 10px; }
+    p.lead { color: var(--subtext); font-size: 1.1rem; }
+    
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    h2 { font-size: 1.4rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .badge { background: var(--accent); color: #000; font-size: 0.75rem; font-weight: bold; padding: 2px 8px; border-radius: 6px; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .item { background: #1e222d; padding: 16px; border-radius: 12px; border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: space-between; }
+    .item-title { font-weight: bold; margin-bottom: 6px; color: #fff; }
+    .item-desc { font-size: 0.85rem; color: var(--subtext); margin-bottom: 14px; flex-grow: 1; }
+    
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background: var(--accent);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--btn-hover); }
+    
+    .code-box {
+      background: #000;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 14px;
+      font-family: monospace;
+      color: #00ff88;
+      word-break: break-all;
+      margin-top: 8px;
+    }
+    
+    footer { text-align: center; color: var(--subtext); font-size: 0.85rem; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎬 zFim - Xem Fim Cho Đã</h1>
+      <p class="lead">Kênh phát hành bộ cài đặt chính thức & Liên kết cố định vĩnh viễn</p>
+    </header>
+
+    <div class="card" style="border-left: 4px solid var(--accent);">
+      <h2>📺 Cài đặt trên Android TV / Fire TV qua Downloader</h2>
+      <p style="color: var(--subtext); margin-bottom: 12px;">Dán liên kết cố định sau vào <strong><a href="https://go.aftvnews.com/" target="_blank" style="color: var(--accent);">go.aftvnews.com</a></strong> để tạo 1 mã số duy nhất dùng mãi mãi:</p>
+      <div class="code-box">https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-release.apk</div>
+      <p style="font-size: 0.85rem; color: #aaa; margin-top: 10px;">💡 Khi nhập mã vào ứng dụng Downloader trên TV, hệ thống luôn tự động tải về bản cập nhật mới nhất (không cần tạo lại mã khi có bản mới).</p>
+    </div>
+
+    <div class="card">
+      <h2>📱 Android (TV & Điện thoại / Tablet) <span class="badge">v0.0.90</span></h2>
+      <div class="grid">
+        <div class="item">
+          <div>
+            <div class="item-title">Bản Universal (Khuyên dùng)</div>
+            <div class="item-desc">Tương thích mọi thiết bị Android TV, Android Box, Mobile, Tablet.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-release.apk">Tải app-release.apk (46MB)</a>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-title">Bản ARM64 (Siêu nhẹ)</div>
+            <div class="item-desc">Tối ưu dung lượng cho TV & điện thoại đời mới 64-bit.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-arm64-v8a-release.apk">Tải ARM64 APK (17MB)</a>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-title">Bản ARMv7 (32-bit cũ)</div>
+            <div class="item-desc">Dành cho TV Box hoặc điện thoại đời cũ chạy chip 32-bit.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-armeabi-v7a-release.apk">Tải ARMv7 APK (16MB)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💻 Windows & macOS Desktop <span class="badge">v0.0.90</span></h2>
+      <div class="grid">
+        <div class="item">
+          <div>
+            <div class="item-title">Windows Setup</div>
+            <div class="item-desc">Bộ cài đặt tiêu chuẩn, tạo phím tắt Desktop và menu Start.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Setup.exe">Tải Windows Setup.exe</a>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-title">Windows Portable (1-Click)</div>
+            <div class="item-desc">Nhấn vào là chạy ngay, không cần giải nén ra thư mục.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Portable.exe">Tải Windows Portable.exe</a>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-title">macOS DMG</div>
+            <div class="item-desc">Đĩa cài đặt kéo-thả, hỗ trợ Apple Silicon & Intel, vuốt chuột cảm ứng.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-macOS.dmg">Tải macOS.dmg</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🍎 iOS (iPhone & iPad) <span class="badge">v0.0.90</span></h2>
+      <div class="grid">
+        <div class="item">
+          <div>
+            <div class="item-title">Gói cài đặt iOS IPA</div>
+            <div class="item-desc">Tương thích hoàn hảo TrollStore, AltStore, Sideloadly, Scarlet.</div>
+          </div>
+          <a class="btn" href="https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-iOS.ipa">Tải zFim.ipa</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 zFim. Phát hành mã nguồn & ứng dụng bởi Zitzzzzz.</p>
+    </footer>
+  </div>
+</body>
+</html>
