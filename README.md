@@ -15,10 +15,11 @@ Kho phân phối chính thức bộ cài đặt và dịch vụ Cập nhật T�
 | **Android TV (Tối ưu TV Leanback)** | `app-tv-release.apk` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-tv-release.apk`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-tv-release.apk) |
 | **Android ARM64 (Tối ưu dung lượng ~18MB)** | `app-arm64-v8a-release.apk` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-arm64-v8a-release.apk`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-arm64-v8a-release.apk) |
 | **Android ARMv7 (Thiết bị 32-bit cũ)** | `app-armeabi-v7a-release.apk` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-armeabi-v7a-release.apk`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/app-armeabi-v7a-release.apk) |
-| **Windows Desktop x64 (Bộ cài đặt Setup)** | `zFim-Setup.exe` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Setup.exe`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Setup.exe) |
-| **Windows Desktop x64 (Chạy ngay Portable)** | `zFim-Portable.exe` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Portable.exe`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-Portable.exe) |
-| **macOS (Apple Silicon & Intel)** | `zFim.dmg` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-macOS.dmg`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-macOS.dmg) |
-| **iOS (TrollStore / Sideloadly / AltStore)** | `zFim.ipa` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-iOS.ipa`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-v0.0.90-iOS.ipa) |
+| **Windows Desktop x64 (Bộ cài đặt Setup)** | `zFim-Setup.exe` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-Setup.exe`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-Setup.exe) |
+| **Windows Desktop x64 (Chạy ngay Portable)** | `zFim-Portable.exe` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-Portable.exe`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-Portable.exe) |
+| **macOS (Apple Silicon & Intel DMG)** | `zFim-macOS.dmg` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-macOS.dmg`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-macOS.dmg) |
+| **macOS (Apple Silicon & Intel ZIP)** | `zFim-macOS.zip` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-macOS.zip`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-macOS.zip) |
+| **iOS (TrollStore / Sideloadly / AltStore)** | `zFim-iOS.ipa` | [`https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa`](https://github.com/Zitzzzzz/zFim-app-Releases/releases/latest/download/zFim-iOS.ipa) |
 
 ---
 
