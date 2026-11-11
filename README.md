@@ -51,3 +51,5 @@ Kho phân phối chính thức bộ cài đặt và dịch vụ Cập nhật T�
 * **Manifest chính:** `https://raw.githubusercontent.com/Zitzzzzz/zFim-app-Releases/main/version.json`
 * **CDN Tốc độ cao (jsDelivr):** `https://cdn.jsdelivr.net/gh/Zitzzzzz/zFim-app-Releases@main/version.json`
 * **Kho nguồn phim mặc định:** `https://cdn.jsdelivr.net/gh/Zitzzzzz/zFim-app-Releases@main/zFim01.json`
+
+<!-- update ping 2026-11-11T10:12:57Z -->
