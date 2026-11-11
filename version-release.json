@@ -1,10 +1,10 @@
 {
   "versionCode": 10099,
   "versionName": "0.0.99",
-  "buildTimestamp": "2026-11-11T09:34:59Z",
-  "releaseNotes": "Bản phát hành v0.0.99 (Đồng bộ toàn diện hệ thống trailer phim đa nền tảng, chống màn hình đen & Fallback tập phim mới nhất):\n1) Android TV (Leanback Home & Chi tiết phim - Chuẩn Netflix):\n   - Hero Home và Chi tiết phim: Dừng remote D-pad tại bất kỳ poster nào sau 5s sẽ tự động kích hoạt trailer đè lên hero-banner; di chuyển D-pad sẽ dừng trailer và chuyển phim ngay lập tức.\n   - Cơ chế bảo vệ màn hình đen: Luôn giữ poster nền làm base layer, chỉ crossfade sang video khi đã bắt đầu render; loại bỏ hoàn toàn lỗi tối đen màn hình.\n2) Nền tảng cảm ứng (Mobile Android & iOS):\n   - Trang chủ giữ trải nghiệm lướt mượt mà không hao pin/data.\n   - Trang Chi tiết phim: sau 5s trailer tự động chạy background thay cho hero-banner; tự dừng khi cuộn xem danh sách tập.\n3) Nền tảng chuột (macOS, Windows - Chuẩn 500phim.net):\n   - Rê chuột qua poster 2s: bung lên thẻ xem nhanh thông tin phim (Ảnh bìa 16:9, Tên phim, Xem ngay dạng pill xanh, Yêu thích, Thông tin, Chip metadata, Thể loại).\n   - Sau 3s ở trong popup: trailer tự động phát với nút bật/tắt tiếng độc lập ở góc dưới bên phải.\n   - Sử dụng isolated controller tránh xung đột trạng thái hay lỗi dispose singleton.\n4) Động cơ tìm kiếm & Fallback thông minh:\n   - Pipeline phân giải trailer: TMDB Videos (đa ngôn ngữ) -> YouTube Search ('[Tên phim] official trailer') -> AniList GraphQL.\n   - Cơ chế Fallback đặc biệt: Nếu không tìm thấy trailer trên YouTube, hệ thống tự động trích xuất stream tập mới nhất từ addon và phát thay thế trailer.",
+  "buildTimestamp": "2026-11-11T11:30:00Z",
+  "releaseNotes": "Bản phát hành v0.0.99 (Đồng bộ toàn diện hệ thống trailer phim đa nền tảng, chống màn hình đen & Fallback tập phim mới nhất):\n1) Android TV (Leanback Home & Chi tiết phim - Chuẩn Netflix):\n   - Hero Home và Chi tiết phim: Dừng remote D-pad tại bất kỳ poster nào sau 5s sẽ tự động kích hoạt trailer đè lên hero-banner; di chuyển D-pad sẽ dừng trailer và chuyển phim ngay lập tức.\n   - Cơ chế bảo vệ màn hình đen: Luôn giữ poster nền làm base layer, chỉ crossfade sang video khi đã bắt đầu render; loại bỏ hoàn toàn lỗi tối đen màn hình.\n2) Nền tảng cảm ứng (Mobile Android & iOS):\n   - Trang chủ giữ trải nghiệm lướt mượt mà không hao pin/data.\n   - Trang Chi tiết phim: sau 5s trailer tự động chạy background thay cho hero-banner; tự dừng khi cuộn xem danh sách tập.\n   - Xóa bỏ hoàn toàn thanh điều khiển media (nút tua/dừng/next) khi phát background trailer, thanh topbar back làm mờ trong suốt với gradient đen chuyển màu tinh tế.\n3) Nền tảng chuột (macOS, Windows - Chuẩn 500phim.net):\n   - Rê chuột qua poster 2s: bung lên thẻ xem nhanh thông tin phim (Ảnh bìa 16:9, Tên phim, Xem ngay dạng pill xanh, Yêu thích, Thông tin, Chip metadata, Thể loại).\n   - Sau 3s ở trong popup: trailer tự động phát bằng MediaKit Native với nút bật/tắt tiếng độc lập ở góc dưới bên phải.\n   - Windows Setup v0.0.99 chính thức được biên dịch native x64 mới nhất.\n4) Động cơ tìm kiếm & Fallback thông minh:\n   - Pipeline phân giải trailer: TMDB Videos (đa ngôn ngữ) -> YouTube Search ('[Tên phim] official trailer') -> AniList GraphQL.\n   - Trích xuất stream trực tiếp MP4/HLS chất lượng cao phát qua MediaKit libmpv không bị lỗi Error 150 hạn chế nhúng.\n   - Cơ chế Fallback đặc biệt: Nếu không tìm thấy trailer trên YouTube, hệ thống tự động trích xuất stream tập mới nhất từ addon và phát thay thế trailer.",
   "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.0.99/app-release.apk",
-  "sha256": "7d7962c507580417405926e0a7f59fb3b8931f1ed19e42c74527adf558c453b8",
+  "sha256": "a4f0757b140d9fd5284999282cddb1db14d1e6edb092c2927c041a83345db43e",
   "downloadUrls": {
     "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.0.99/app-release.apk",
     "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.0.99/app-armeabi-v7a-release.apk",
@@ -18,12 +18,12 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.0.99/zFim-v0.0.99-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.0.99/zFim-v0.0.99-Windows-Portable.zip"
   },
-  "sha256_universal": "7d7962c507580417405926e0a7f59fb3b8931f1ed19e42c74527adf558c453b8",
-  "sha256_armeabi_v7a": "cfc666b0f2fd011dae5f6df84df05b352bc0f1214677c854c8f0d80023f4a496",
-  "sha256_arm64": "23330506dcd136ad8b23f4d251437915b3dca57ffe20000995124ed71abe55db",
-  "sha256_x86_64": "7a4c2ffee36ba3df20f01b24f8d469d0ac18492c1c3f90e52cb6ab5ad89cd6b1",
-  "sha256_macos_dmg": "ba9c4e003db5c45f96f49d81a931191bdd6f1e3f23e1a22ca02d43b07d1197fd",
-  "sha256_macos_zip": "14e5aaf191c9bbef921f0cffc2bfa9b5b9596698868dcdba897c9e502cc6478f",
-  "sha256_windows_setup": "1c6330aab455dc6c749053d37ce7ebf4179b228bc19734f24e9f7eeab8e97457",
-  "sha256_windows_portable": "ab9fe9f43ea1769127310832d368deec9bb80f75336ed0116c198e3db9be1551"
+  "sha256_universal": "a4f0757b140d9fd5284999282cddb1db14d1e6edb092c2927c041a83345db43e",
+  "sha256_armeabi_v7a": "ece50084ae520369c214aed0ffe1087342ec2d83c69df9b155b66ac9089ae5b5",
+  "sha256_arm64": "6d764efe71e7107a001fe67aaad936f725a7a92517c8c6887d50d53b0e88a340",
+  "sha256_x86_64": "9daba637af703f97bce3ba26bc2351007cb34b121c934a0593ff9623500e32fa",
+  "sha256_macos_dmg": "4d2f145cdd96b47be80ccc45c9919ad64081a5149fbbfce71509a6bcd8cca660",
+  "sha256_macos_zip": "48d7be1c0f69fa0863af4e5b43526d83d5eabd6719a4de4356b1058cf46c58d5",
+  "sha256_windows_setup": "bb675325967177a9410519ca268429d9fb6f57181256ad19c2a98744fe57e54e",
+  "sha256_windows_portable": "eb9a3b83d81a472c79a0e567f50ee6ec1080835a14d9ef6d2abe6ae4835e2d1c"
 }
