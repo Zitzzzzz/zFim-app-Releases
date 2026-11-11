@@ -1,7 +1,7 @@
 {
   "versionCode": 10101,
   "versionName": "0.1.01",
-  "buildTimestamp": "2026-11-11T14:05:00Z",
+  "buildTimestamp": "2026-11-11T14:15:00Z",
   "releaseNotes": "Bản phát hành v0.1.01 (Tối ưu hóa toàn diện trải nghiệm Trailer đa nền tảng, Sửa triệt để luồng phát Nguồn C, Bổ sung bộ chọn nguồn nhanh & Sửa lỗi hiển thị UI TV/Desktop):\n1) Android TV (Leanback Home & Chi tiết phim):\n   - Sửa lỗi màn hình tối đen: Loại bỏ hoàn toàn WebView trên Android TV (vốn bị lỗi autoplay / chặn nhúng YouTube); chuyển sang phát video thuần qua MediaKit native hardware acceleration.\n   - Cơ chế Anti-Black-Screen chuẩn xác: Luôn giữ ảnh nền poster tĩnh sắc nét làm base layer, chỉ kích hoạt hiển thị video trailer khi video đã giải mã và bắt đầu render khung hình thực tế (position > 0).\n   - Sửa lỗi logo tên phim nhảy giật ở Hero Banner: Cố định vị trí logo tên phim ở vị trí 2 (Top-anchored) ngay từ đầu; khi người dùng điều khiển remote D-pad duyệt các poster trên kệ phim, logo luôn giữ nguyên vị trí, hoàn toàn không bị nhảy giật lên vị trí 1.\n2) Windows & macOS (Desktop Experience):\n   - Bổ sung Icon đổi nhanh nguồn phim ngay bên phải biểu tượng kính lúp tìm kiếm ở thanh trên cùng trang Home. Nhấn vào sẽ thả xuống menu danh sách toàn bộ các nguồn phim đang có để chuyển đổi tức thì.\n   - Loại bỏ thanh cuộn dọc (scrollbar) trên thanh dock điều hướng bên trái, giữ giao diện phẳng, mượt mà và sang trọng.\n3) Rút ngắn thời gian chờ Trailer xuống 3 giây:\n   - Áp dụng trên toàn bộ các nền tảng (Android TV, Mobile, Windows, macOS): Thời gian debounce tự động phát trailer khi dừng trên poster giảm từ 5 giây xuống còn 3 giây.\n4) Khắc phục triệt để luồng phát Nguồn C (phim.nguonc.com):\n   - Cập nhật kho nguồn tổng hợp zFim01 lên phiên bản v1.5.5, nguồn Nguồn C lên v1.3.1.\n   - Bổ sung cơ chế giải mã tự động StreamC embed player và bóc tách luồng HLS trực tiếp kèm header Origin/Referer.\n   - Bổ sung cơ chế dự phòng an toàn (fallback embed): Đảm bảo tất cả phim và tập phim từ Nguồn C đều phát mượt mà, không còn xuất hiện thông báo 'không có sẵn nguồn stream này'.\n5) Phiên bản OTA chuẩn mực:\n   - Version: 0.1.01 (Build 10101), hỗ trợ kiểm tra và cập nhật tự động mượt mà trên tất cả thiết bị.",
   "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.01/app-release.apk",
   "sha256": "1a8c22b8eee5a900834785401a342a71b6f870d733adbddd2bd4f94eebe5d7a2",
@@ -24,6 +24,6 @@
   "sha256_x86_64": "dc2113c961d346c1fe7f11e58bf64673b48d03554b4588a62c3cde73722142ab",
   "sha256_macos_dmg": "5b55915b04da66f668cd0fea7e39d43f6f8ba0a992e1d772cc92491ce1e84e85",
   "sha256_macos_zip": "50f69f57e698da7b6e42f35a7b9950b8078539a815800139c07a78a9adb03d9e",
-  "sha256_windows_setup": "21c1c9613869d1876bcb09bdb324ce26972f440b29bcce00a67ec36b04a79e58",
-  "sha256_windows_portable": "98486dc6a84133b3288dfd0fc5d7edbde3793cf35139bfb3cff10eeb5cef3c3f"
+  "sha256_windows_setup": "c6b9266aae6b7709992d807d0a0bfccad80edff613d0e68f66e201fe6bcc9b4f",
+  "sha256_windows_portable": "ca1061124241bfd5f674fd3f92b199d3b31cdd7827441a042a654df364132e46"
 }
