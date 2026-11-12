@@ -1,8 +1,8 @@
 {
   "versionCode": 10107,
-  "versionName": "0.1.07",
-  "buildTimestamp": "2026-11-12T09:44:20Z",
-  "releaseNotes": "Bản phát hành v0.1.07 (Khóa cứng màn hình ngang khi play phim trên mobile, ra mắt bố cục chi tiết phim Tối giản & bộ cài iOS Device IPA tương thích TrollStore/AltStore/Scarlet):\n1) Trình Phát Mobile - Khóa Cứng Màn Hình Ngang (Orientation Lock):\n   - Khi phát phim trên điện thoại, màn hình được ép cứng xoay ngang và không tự động quay lại chế độ đứng dù người dùng đang cầm đứng điện thoại.\n   - Quản lý trạng thái thông qua WidgetsBindingObserver.didChangeMetrics, liên tục bảo đảm góc nhìn điện ảnh rộng trọn vẹn.\n2) Tùy Chọn Thiết Lập & Bố Cục Chi Tiết Phim Mới:\n   - Tùy chọn kiểu chọn tập phim mặc định: Cho phép tùy chọn linh hoạt giữa \"Danh sách thẻ 16:9 (List)\" và \"Lưới ô số tập (Lưới)\".\n   - Ra mắt Bố Cục \"Tối Giản\" (thay thế giao diện hai cột cũ):\n     + Poster đứng sắc nét bên trái, bên phải là Logo tên phim và các chip tags phân loại (Năm, Chất lượng 4K, IMDb vàng #F5C518, Độ tuổi).\n     + Background poster ngang được làm mờ ảo với hiệu ứng điện ảnh full tràn viền (sigma 24).\n     + Nội dung tóm tắt phim tinh gọn với nút Xem thêm / Thu gọn mượt mà.\n     + Cụm nút bấm hành động (Xem ngay, Tập phim, Yêu thích, Thêm) và danh sách tập phim chuẩn chỉnh.\n3) Khắc Phục Triệt Để Bản Cài iOS Trên iPhone (iOS Device vs Simulator):\n   - Phân định rõ ràng 2 gói iOS: zFim-iOS.ipa (Mach-O Platform 2 arm64-iphoneos cho iPhone vật lý qua TrollStore/AltStore/Scarlet) và zFim-iOS-Simulator.ipa (Mach-O Platform 7 cho trình giả lập Mac).\n   - Xóa bỏ hoàn toàn lỗi dlopen \"incompatible platform (have iOS-simulator, need iOS)\".\n4) Nâng Cấp Dải versionCode Tăng Đơn Điệu OTA:\n   - versionCode 10107 (Universal/TV Fat APK), 12107 (Split arm64-v8a), 11107 (Split armeabi-v7a), 13107 (Split x86_64).\n   - Triệt tiêu lỗi từ chối cập nhật hoặc lặp vòng lặp thông báo bản cũ.",
+  "versionName": "0.1.07a",
+  "buildTimestamp": "2026-11-12T13:36:06Z",
+  "releaseNotes": "Bản phát hành vá lỗi chuyên biệt v0.1.07a cho nền tảng iOS (Khắc phục triệt để lỗi Library not loaded: @rpath/Flutter.framework/Flutter khi cài đặt qua TrollStore / LiveContainer / AltStore / Scarlet):\n1) Khắc Phục Lỗi Thiếu Flutter.framework & App.framework:\n   - Trước đây quá trình build iOS device bị bỏ sót Flutter.framework, App.framework (Dart AOT) và objective_c.framework do xcode_backend không tự động nhúng vào Runner.app/Frameworks.\n   - Bổ sung quy trình lắp ráp tự động (package_ios.sh) trích xuất chuẩn xác Mach-O Platform 2 (arm64-iphoneos) và nhúng đầy đủ 100% các framework lõi vào Runner.app/Frameworks.\n2) Ký Mã Ad-hoc Chuẩn Xác Cho Sideloading:\n   - Ký mã ad-hoc toàn bộ thư viện con và Runner.app (--timestamp=none), hoàn toàn tương thích với các công cụ cài đặt IPA (TrollStore, LiveContainer, AltStore, Scarlet, Sideloadly).\n   - Đã kiểm tra và xác thực cấu trúc IPA hoàn chỉnh 17MB+ (thay vì 7MB thiếu engine như trước).",
   "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/app-release.apk",
   "sha256": "faca03ffb82b859879c542eee3f1fc4cf8b51ed1e10d2433ab6f856c775e3883",
   "downloadUrls": {
@@ -14,9 +14,9 @@
     "tv-emulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/app-tv-emulator-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-macOS.zip",
-    "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-iOS.ipa",
-    "ios-ipa": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-iOS.ipa",
-    "ios-simulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-iOS-Simulator.ipa",
+    "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07a/zFim-v0.1.07a-iOS.ipa",
+    "ios-ipa": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07a/zFim-v0.1.07a-iOS.ipa",
+    "ios-simulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07a/zFim-v0.1.07a-iOS-Simulator.ipa",
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.07/zFim-v0.1.07-Windows-Portable.zip"
   },
@@ -26,8 +26,8 @@
   "sha256_x86_64": "91847b59da3187f4309dcad4829862ab8f64aadb5b1393c830ce96280d21e88c",
   "sha256_macos_dmg": "881baaee8c20bb5451e3a4c8c94855f81ac23193b38126065778590de975e777",
   "sha256_macos_zip": "d3c6a72ebdddf241e9d0c18da55a45548eb4430b4036e6594c1fd9913573ac0c",
-  "sha256_ios": "97a43d55035f24909e7e06fc93cc0260b1343f29d977536fc00769fcfb8bf7b0",
-  "sha256_ios_simulator": "4bfc7fdef949d1fb966f99ceb5ced948fa925e3841e6ec8000ae74e275dc7b5d",
+  "sha256_ios": "1f9fdf1df2d753b4c6820a507a0e2da80a4e6c493dd1eacfa9255185a95bd747",
+  "sha256_ios_simulator": "870c4a5157e3baa316ff800ac6a8db34f817926b9e643fa08033abef2fdd89e7",
   "sha256_windows_setup": "df554ab218f02dfac1302ae49b78815eabf14ce12138003f326f1d4b5f26fec6",
   "sha256_windows_portable": "d48b9ef4e549f80c44bfe338e7af97068c882884fd24997751c1a38538f0ab91"
 }
