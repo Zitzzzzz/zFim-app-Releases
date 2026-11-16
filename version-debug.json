@@ -28,6 +28,6 @@
   "sha256_macos_zip": "9bfa766980aef3de70aad38b18dc2d07ea124abd522eb3f06ad57ebdc5abb4b3",
   "sha256_ios": "82fa5526bf79479473fbec1e2ae3b76797d82a4c80eded65332b99559671b92b",
   "sha256_ios_simulator": "80e223b1bb4ca1ab59a6e9e02f8e0e60a800b984a9d23b29cec49c6339ba9c83",
-  "sha256_windows_setup": "",
-  "sha256_windows_portable": ""
+  "sha256_windows_setup": "f075a54945d10f0d2c3b1d4c76f7eb62f715482464680221de993c5a6b4c3584",
+  "sha256_windows_portable": "a59740cc6c5e2e812624329bf8b5e63b363aa41f2272a44278043861c8bf8164"
 }
