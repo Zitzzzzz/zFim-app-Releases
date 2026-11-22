@@ -1,0 +1,18 @@
+{
+  "versionCode": 10002,
+  "versionName": "1.0.1",
+  "buildTimestamp": "2026-11-23T01:36:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.1:\n- Thiết kế lại Cài đặt phong cách Hallmark 4K trong suốt, đưa nút Check Update lên góc trên.\n- Bổ sung đầy đủ tùy biến Trình phát & Giao diện (tỷ lệ thu phóng, tốc độ phát, bước tua, tự động chuyển tập, cỡ chữ/màu phụ đề, logo watermark, chu kỳ Hero Top 10, xóa Cache Glide).\n- Tích hợp chọn Nguồn phát | Phụ đề | Âm thanh ngay trong nút Nguồn trên trình phát, bỏ label văn bản cho HUD tinh gọn.\n- Trang Chi tiết phim: rút gọn nút Xem, bỏ label văn bản các nút thao tác, hộp thoại Tập phim 2 cột chuẩn zFim Flutter.\n- Căn lề trên (Top-Crop) giữ trọn đầu nhân vật và ưu tiên ảnh nền 1080p.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/tv-native-v1.0.1/zFim-TV-Native-universal.apk",
+  "sha256": "33145ad3ca324e445afcea9fcb4b28c46f307ea54d872cd8f72f845024795083",
+  "downloadUrls": {
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/tv-native-v1.0.1/zFim-TV-Native-universal.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/tv-native-v1.0.1/zFim-TV-Native-armeabi-v7a.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/tv-native-v1.0.1/zFim-TV-Native-arm64-v8a.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/tv-native-v1.0.1/zFim-TV-Native-x86_64.apk"
+  },
+  "sha256_universal": "33145ad3ca324e445afcea9fcb4b28c46f307ea54d872cd8f72f845024795083",
+  "sha256_armeabi-v7a": "33145ad3ca324e445afcea9fcb4b28c46f307ea54d872cd8f72f845024795083",
+  "sha256_arm64": "33145ad3ca324e445afcea9fcb4b28c46f307ea54d872cd8f72f845024795083",
+  "sha256_x86_64": "33145ad3ca324e445afcea9fcb4b28c46f307ea54d872cd8f72f845024795083"
+}
