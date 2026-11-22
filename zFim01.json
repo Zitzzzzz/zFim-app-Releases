@@ -4,7 +4,7 @@
   "id": "zFim01",
   "name": "zFim01",
   "description": "Kho nguồn tổng hợp zFim01 chính thức (21 nguồn: Phim truyện HD, Phim 4K Song ngữ, Hoạt hình 3D Trung Quốc 4K, Anime, Phim bộ, Thể thao trực tiếp & Kênh truyền hình)",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "addons": [
     {
       "$schema": "zfim/addon-json/v1",
@@ -1803,14 +1803,14 @@
       "kind": "single",
       "id": "yanhh3d",
       "name": "YanHH3D 4K",
-      "version": "1.0.5",
-      "description": "Kho Hoạt Hình 3D Trung Quốc Vietsub / Thuyết minh từ yanhh3d.de (tự động phân tách server Thuyết Minh & Vietsub, giải mã stream pU/sU)",
-      "logo": "https://yanhh3d.de/storage/settings/August2024/YOoAwtlobLbwKhiFwRZv.png",
-      "base": "https://yanhh3d.de",
+      "version": "1.0.6",
+      "description": "Kho Hoạt Hình 3D Trung Quốc Vietsub / Thuyết minh từ yanhh3d.baby (tự động phân tách server Thuyết Minh & Vietsub, giải mã stream pU/sU)",
+      "logo": "https://yanhh3d.baby/storage/settings/August2024/YOoAwtlobLbwKhiFwRZv.png",
+      "base": "https://yanhh3d.baby",
       "dynamicDomainUrl": "https://bit.ly/yanhh3d",
       "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Referer": "https://yanhh3d.de/"
+        "Referer": "https://yanhh3d.baby/"
       },
       "types": [
         "series",
