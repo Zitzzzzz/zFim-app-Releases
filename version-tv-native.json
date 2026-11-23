@@ -1,18 +1,18 @@
 {
-  "versionCode": 10009,
-  "versionName": "1.0.8",
-  "buildTimestamp": "2026-11-24T02:08:00+07:00",
-  "releaseNotes": "zFim TV Native v1.0.8 (Anchored Episode Popover, Ergonomic Subtitle Settings, Audio Track Scanner & D-Pad Polish):\n- Popup Chọn Tập Nhanh (Anchored Popover Card): Nhấn giữ Enter/OK trên poster phim mở card nổi nhỏ gọn ngay tại vị trí poster, không che khuất màn hình, chọn tập và server cực nhanh.\n- Cải tổ Sheet Phụ đề & Trình phát công thái học: Chống nhảy focus về tab khi thao tác, sửa triệt để lỗi không tắt được phụ đề đơn, bổ sung tùy biến màu sắc, kích cỡ, viền/đổ bóng và độ trong suốt nền text.\n- Quét luồng Âm thanh (Audio Tracks): Nhận diện và cho phép chuyển đổi tức thì giữa các luồng Thuyết minh, Lồng tiếng, Âm thanh gốc (Stereo, 5.1 Surround, 7.1 Surround, Dolby AC-3/E-AC-3/AAC).\n- Nhãn Cảnh báo Độ tuổi Netflix: Chuẩn điện ảnh giống zFim Flutter (thẻ kính mờ đen, viền vàng Gold accent, phân loại T18/T16/T13/P và mô tả), tự động mờ dần sau 5 giây.\n- Tối ưu Hero Banner & Điều hướng D-pad: Tăng thời gian chuyển tiếp poster lên 500ms êm dịu, khắc phục triệt để hiện tượng sáng nút Xem Thêm khi di chuyển D-pad Lên/Xuống giữa các kệ phim.",
+  "versionCode": 10010,
+  "versionName": "1.0.9",
+  "buildTimestamp": "2026-11-24T03:20:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.9 (Backdrop Popover Card, Clean Dual Captions & Zero-Lag Setting Navigation):\n- Popup Chọn Tập Nhanh Backdrop Điện Ảnh: Thêm hình nền poster ngang của phim kèm hiệu ứng đen mờ điện ảnh mềm mại, logo tên phim TMDB, icon Trái tim Yêu thích và dòng Xem tiếp Tập X kèm thời gian xem dở.\n- Phụ đề Song ngữ Chuẩn 2 Dòng (Dual Captions Clean): Khắc phục triệt để lỗi Media3 SubtitleView render đè dòng thứ 3; tắt phụ đề đơn biến mất ngay lập tức; xóa bỏ các thiết lập dư thừa ở đáy tab phụ đề.\n- Bóc tách Nguồn Song Ngữ Trơn Tru: Sửa lỗi ERROR_CODE_PARSING_MANIFEST_MALFORMED do URL iframe embed, tự động giải mã luồng direct M3U8 phát mượt mà không crash.\n- Điều hướng Tab Thiết lập Trình phát Không Trễ (Zero-Lag Focus): Di chuyển D-pad Trái/Phải qua các tab chuyển ngữ cảnh tức thì không cần chờ bấm Enter; chọn các thiết lập cập nhật badge tại chỗ mà không làm nhảy con trỏ lên tab ngang.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
+  "sha256": "6c81c1095fce6cdd080ca0f476be6944101a0555d465f77104b086627a764be3",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
-  "sha256_armeabi-v7a": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
-  "sha256_arm64-v8a": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
-  "sha256_x86_64": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156"
+  "sha256_universal": "6c81c1095fce6cdd080ca0f476be6944101a0555d465f77104b086627a764be3",
+  "sha256_armeabi-v7a": "6c81c1095fce6cdd080ca0f476be6944101a0555d465f77104b086627a764be3",
+  "sha256_arm64-v8a": "6c81c1095fce6cdd080ca0f476be6944101a0555d465f77104b086627a764be3",
+  "sha256_x86_64": "6c81c1095fce6cdd080ca0f476be6944101a0555d465f77104b086627a764be3"
 }
