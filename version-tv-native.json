@@ -1,18 +1,18 @@
 {
-  "versionCode": 10008,
-  "versionName": "1.0.7",
-  "buildTimestamp": "2026-11-24T01:05:00+07:00",
-  "releaseNotes": "zFim TV Native v1.0.7 (Debug & Hoàn thiện UI/UX, Video Player, Nguồn Song Ngữ):\n- Sửa lỗi không hiển thị tóm tắt phim: Khắc phục khung rỗng viền vàng, làm sạch HTML entities, tự động fallback lấy overview tiếng Việt từ TMDB và ẩn viền khi rỗng.\n- Bỏ qua giới thiệu & Nhãn cảnh báo độ tuổi Netflix: Bỏ hardcode 85s, tích hợp IntroSkipService (TheIntroDB & SkipDB) với nút Bỏ qua giới thiệu chuẩn điện ảnh tự ẩn sau 3s, hiển thị nhãn độ tuổi (T18, T16, T13, K, P) góc trên mờ dần cùng lúc.\n- Khắc phục triệt để nguồn Song Ngữ & Phụ đề rời (ChoPhim & 500phim): Bóc tách phụ đề đa ngữ từ Next.js RSC, vượt lỗi manifest Turnstile bằng cơ chế ghép luồng video hoạt động và giữ đúng tiêu đề server Song Ngữ đã chọn.\n- Nhúng kho nguồn zFim01 ẩn kín: Mặc định app là Clean Platform trắng, kích hoạt kho zFim01 bằng mã 'zFim01' hoặc 'zfim01', bổ sung fallback QR pairing qua ntfy.sh an toàn.\n- Khắc phục lỗi D-pad nhảy sang 'Xem thêm': Điều hướng D-pad Lên/Xuống chuyển kệ mượt mà, không bị giật hay nhảy cóc.\n- Tối ưu Hero Banner: Chuyển tiếp mượt mà (crossfade 300ms) giữa backdrop gốc và TMDB, bỏ text thừa 'nhấn xem ngay', bỏ lặp tên addon 3 lần và chuẩn hóa bộ tag Chất lượng | TM-PĐ | điểm IMDb.\n- Nhấn giữ phím Enter / D-pad Center trên poster: Bung ngay popup chọn tập nhanh 2 cột chuẩn Hallmark Cinema để phát tập bất kỳ mà không cần vào trang Chi tiết.",
+  "versionCode": 10009,
+  "versionName": "1.0.8",
+  "buildTimestamp": "2026-11-24T02:08:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.8 (Anchored Episode Popover, Ergonomic Subtitle Settings, Audio Track Scanner & D-Pad Polish):\n- Popup Chọn Tập Nhanh (Anchored Popover Card): Nhấn giữ Enter/OK trên poster phim mở card nổi nhỏ gọn ngay tại vị trí poster, không che khuất màn hình, chọn tập và server cực nhanh.\n- Cải tổ Sheet Phụ đề & Trình phát công thái học: Chống nhảy focus về tab khi thao tác, sửa triệt để lỗi không tắt được phụ đề đơn, bổ sung tùy biến màu sắc, kích cỡ, viền/đổ bóng và độ trong suốt nền text.\n- Quét luồng Âm thanh (Audio Tracks): Nhận diện và cho phép chuyển đổi tức thì giữa các luồng Thuyết minh, Lồng tiếng, Âm thanh gốc (Stereo, 5.1 Surround, 7.1 Surround, Dolby AC-3/E-AC-3/AAC).\n- Nhãn Cảnh báo Độ tuổi Netflix: Chuẩn điện ảnh giống zFim Flutter (thẻ kính mờ đen, viền vàng Gold accent, phân loại T18/T16/T13/P và mô tả), tự động mờ dần sau 5 giây.\n- Tối ưu Hero Banner & Điều hướng D-pad: Tăng thời gian chuyển tiếp poster lên 500ms êm dịu, khắc phục triệt để hiện tượng sáng nút Xem Thêm khi di chuyển D-pad Lên/Xuống giữa các kệ phim.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
+  "sha256": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
-  "sha256_armeabi-v7a": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
-  "sha256_arm64-v8a": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
-  "sha256_x86_64": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106"
+  "sha256_universal": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
+  "sha256_armeabi-v7a": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
+  "sha256_arm64-v8a": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156",
+  "sha256_x86_64": "eb3e698b1cfba721adc70b64e7559ecf89bd188a644ffcb4ef983db84d5ed156"
 }
