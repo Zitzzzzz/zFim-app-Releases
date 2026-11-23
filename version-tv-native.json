@@ -1,18 +1,18 @@
 {
-  "versionCode": 10007,
-  "versionName": "1.0.6",
-  "buildTimestamp": "2026-11-23T11:48:00+07:00",
-  "releaseNotes": "zFim TV Native v1.0.6 (Giai đoạn 1.2 & Giai đoạn 2):\n- Hồ sơ Gia đình Multi-Profile: Tạo/chuyển/xóa nhiều hồ sơ, chế độ Thiếu nhi (lọc nội dung 18+/kinh dị), khóa PIN 4 số, lịch sử xem & yêu thích tách biệt.\n- Bảo mật Chống Mod & Telemetry Edge: Xác thực SHA-256 chữ ký APK (SecurityGuard), báo cáo heartbeat HMAC-SHA256 & cổng điều khiển từ xa (AppControlState) qua Cloudflare Worker.\n- Cache L2 bền vững (DiskCacheStore): Khởi động Home tức thì từ snapshot 3h, lưu cache TMDB & XMLTV EPG kèm thống kê/dọn cache trong Cài đặt.\n- Trang Chi tiết phim nâng cấp: Huy hiệu kỹ thuật Media Badges (4K UHD, Dolby Vision, HDR10+, Atmos, DTS, HEVC), Bộ chọn Mùa TMDB & Danh sách Diễn viên (xem phim cùng diễn viên).\n- Bàn phím TV ảo Telex 6 cột + Chợ Fim Multi-Filter (Loại x Thể loại x Quốc gia x Năm) + Tùy biến Phụ đề trực quan (5 màu, độ mờ nền, viền, vị trí kèm Live Preview).\n- Trình phát Stage 2: Dò server song song (StreamRacing), Bỏ qua Intro/Outro động, Thumbnail Preview khi tua WebVTT Sprite, Picture-in-Picture (Android 8+), MediaSession phím cứng & gợi ý Trình phát ngoài khi gặp AC3/DTS.\n- Tizi IPTV XMLTV EPG: Hiển thị chương trình Đang chiếu/Tiếp theo và bộ lọc nhóm Thể thao thông minh.",
+  "versionCode": 10008,
+  "versionName": "1.0.7",
+  "buildTimestamp": "2026-11-24T01:05:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.7 (Debug & Hoàn thiện UI/UX, Video Player, Nguồn Song Ngữ):\n- Sửa lỗi không hiển thị tóm tắt phim: Khắc phục khung rỗng viền vàng, làm sạch HTML entities, tự động fallback lấy overview tiếng Việt từ TMDB và ẩn viền khi rỗng.\n- Bỏ qua giới thiệu & Nhãn cảnh báo độ tuổi Netflix: Bỏ hardcode 85s, tích hợp IntroSkipService (TheIntroDB & SkipDB) với nút Bỏ qua giới thiệu chuẩn điện ảnh tự ẩn sau 3s, hiển thị nhãn độ tuổi (T18, T16, T13, K, P) góc trên mờ dần cùng lúc.\n- Khắc phục triệt để nguồn Song Ngữ & Phụ đề rời (ChoPhim & 500phim): Bóc tách phụ đề đa ngữ từ Next.js RSC, vượt lỗi manifest Turnstile bằng cơ chế ghép luồng video hoạt động và giữ đúng tiêu đề server Song Ngữ đã chọn.\n- Nhúng kho nguồn zFim01 ẩn kín: Mặc định app là Clean Platform trắng, kích hoạt kho zFim01 bằng mã 'zFim01' hoặc 'zfim01', bổ sung fallback QR pairing qua ntfy.sh an toàn.\n- Khắc phục lỗi D-pad nhảy sang 'Xem thêm': Điều hướng D-pad Lên/Xuống chuyển kệ mượt mà, không bị giật hay nhảy cóc.\n- Tối ưu Hero Banner: Chuyển tiếp mượt mà (crossfade 300ms) giữa backdrop gốc và TMDB, bỏ text thừa 'nhấn xem ngay', bỏ lặp tên addon 3 lần và chuẩn hóa bộ tag Chất lượng | TM-PĐ | điểm IMDb.\n- Nhấn giữ phím Enter / D-pad Center trên poster: Bung ngay popup chọn tập nhanh 2 cột chuẩn Hallmark Cinema để phát tập bất kỳ mà không cần vào trang Chi tiết.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
+  "sha256": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
-  "sha256_armeabi-v7a": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
-  "sha256_arm64-v8a": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
-  "sha256_x86_64": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca"
+  "sha256_universal": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
+  "sha256_armeabi-v7a": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
+  "sha256_arm64-v8a": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106",
+  "sha256_x86_64": "c217616eb0e7c7ee98af8e7a86bcb96730a132bc6d0e1ccf3a33492473a89106"
 }
