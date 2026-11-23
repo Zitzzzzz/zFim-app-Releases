@@ -1,18 +1,18 @@
 {
-  "versionCode": 10005,
-  "versionName": "1.0.4",
-  "buildTimestamp": "2026-11-23T09:42:00+07:00",
-  "releaseNotes": "zFim TV Native v1.0.4 (Giai đoạn 1.1):\n- Trình phát ngoài (ExternalPlayerService): hỗ trợ VLC, Just Player, MX Player, Kodi, MPV-Android qua Intent.ACTION_VIEW kèm headers Referer/User-Agent và phụ đề rời; tùy chọn mặc định trong Cài đặt -> Trình phát và chuyển nhanh trong Sheet Nguồn phát.\n- Clean Cloudflare IP Fallback tự động trong NativeHttpClient.FastResilientDns khi DNS/TLS handshake bị chặn hoặc timeout, tự hồi phục cache không ảnh hưởng tới DoH.\n- Thẻ đếm ngược chuyển tập tự động ở 45s cuối tập (Phát ngay / Ở lại) và Phụ đề Song ngữ (Dual Captions) với TreeMap tra cứu nhị phân gọn nhẹ RAM.\n- Nâng cấp Tìm kiếm TV Box: Bàn phím TV ảo 6 cột + Live debounce, Tag lịch sử tìm kiếm và Tìm kiếm Giọng nói (KEYCODE_SEARCH / RecognizerIntent) an toàn trên MiTV4.\n- Gom Vũ trụ Phim / Phần-Mùa (Franchise Grouper) trên Chi tiết phim + Sắp xếp, ghim, ẩn/hiện các kệ Trang chủ (Tiếp Tục Xem, Tizi, Danh mục nguồn, Top 10, Yêu Thích).\n- Tích hợp Android TV Launcher Watch Next (TvContractCompat) & SearchProvider toàn cầu (tự bỏ qua an toàn trên MiTV4 / MIUI TV nội địa).",
+  "versionCode": 10006,
+  "versionName": "1.0.5",
+  "buildTimestamp": "2026-11-23T10:25:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.5 (Tối ưu điều hướng & khắc phục lỗi Kệ phim / Trailer):\n- Ẩn hoàn toàn kênh Tizi khỏi màn hình Kệ phim (chỉ hiển thị ở tab Tizi).\n- Dừng lặp vô hạn cho các kệ có dưới 10 phim; cải thiện điều hướng D-Pad từ kệ & Hero sang nút Xem thêm.\n- Sắp xếp lại mặc định Home: Tiếp Tục Xem -> Phim Yêu Thích -> Top 10 Hôm Nay -> toàn bộ các phân loại của nguồn (tải đầy đủ 2 batch không giới hạn 5 mục).\n- Tối ưu D-Pad mượt không giật / không nhảy cóc trong Cài đặt & Bảng Chuyển Nguồn Nhanh (cache 4 panel + StateListDrawable + ColorStateList).\n- Tự động phát Trailer sau 3 giây trong Chi tiết phim khi bật tùy chọn Trailer.\n- Tự động phát hiện Trailer YouTube bị chặn lãnh thổ / không thể nhúng và chuyển mượt sang phát thử tập mới nhất.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "1ce15731655ed52bb821635e6b220aaa0f57e03e95290459b87ab4f09d5cc04d",
+  "sha256": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "1ce15731655ed52bb821635e6b220aaa0f57e03e95290459b87ab4f09d5cc04d",
-  "sha256_armeabi-v7a": "1ce15731655ed52bb821635e6b220aaa0f57e03e95290459b87ab4f09d5cc04d",
-  "sha256_arm64": "1ce15731655ed52bb821635e6b220aaa0f57e03e95290459b87ab4f09d5cc04d",
-  "sha256_x86_64": "1ce15731655ed52bb821635e6b220aaa0f57e03e95290459b87ab4f09d5cc04d"
+  "sha256_universal": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
+  "sha256_armeabi-v7a": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
+  "sha256_arm64": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
+  "sha256_x86_64": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76"
 }
