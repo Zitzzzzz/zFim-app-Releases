@@ -1,18 +1,18 @@
 {
-  "versionCode": 10006,
-  "versionName": "1.0.5",
-  "buildTimestamp": "2026-11-23T10:25:00+07:00",
-  "releaseNotes": "zFim TV Native v1.0.5 (Tối ưu điều hướng & khắc phục lỗi Kệ phim / Trailer):\n- Ẩn hoàn toàn kênh Tizi khỏi màn hình Kệ phim (chỉ hiển thị ở tab Tizi).\n- Dừng lặp vô hạn cho các kệ có dưới 10 phim; cải thiện điều hướng D-Pad từ kệ & Hero sang nút Xem thêm.\n- Sắp xếp lại mặc định Home: Tiếp Tục Xem -> Phim Yêu Thích -> Top 10 Hôm Nay -> toàn bộ các phân loại của nguồn (tải đầy đủ 2 batch không giới hạn 5 mục).\n- Tối ưu D-Pad mượt không giật / không nhảy cóc trong Cài đặt & Bảng Chuyển Nguồn Nhanh (cache 4 panel + StateListDrawable + ColorStateList).\n- Tự động phát Trailer sau 3 giây trong Chi tiết phim khi bật tùy chọn Trailer.\n- Tự động phát hiện Trailer YouTube bị chặn lãnh thổ / không thể nhúng và chuyển mượt sang phát thử tập mới nhất.",
+  "versionCode": 10007,
+  "versionName": "1.0.6",
+  "buildTimestamp": "2026-11-23T11:48:00+07:00",
+  "releaseNotes": "zFim TV Native v1.0.6 (Giai đoạn 1.2 & Giai đoạn 2):\n- Hồ sơ Gia đình Multi-Profile: Tạo/chuyển/xóa nhiều hồ sơ, chế độ Thiếu nhi (lọc nội dung 18+/kinh dị), khóa PIN 4 số, lịch sử xem & yêu thích tách biệt.\n- Bảo mật Chống Mod & Telemetry Edge: Xác thực SHA-256 chữ ký APK (SecurityGuard), báo cáo heartbeat HMAC-SHA256 & cổng điều khiển từ xa (AppControlState) qua Cloudflare Worker.\n- Cache L2 bền vững (DiskCacheStore): Khởi động Home tức thì từ snapshot 3h, lưu cache TMDB & XMLTV EPG kèm thống kê/dọn cache trong Cài đặt.\n- Trang Chi tiết phim nâng cấp: Huy hiệu kỹ thuật Media Badges (4K UHD, Dolby Vision, HDR10+, Atmos, DTS, HEVC), Bộ chọn Mùa TMDB & Danh sách Diễn viên (xem phim cùng diễn viên).\n- Bàn phím TV ảo Telex 6 cột + Chợ Fim Multi-Filter (Loại x Thể loại x Quốc gia x Năm) + Tùy biến Phụ đề trực quan (5 màu, độ mờ nền, viền, vị trí kèm Live Preview).\n- Trình phát Stage 2: Dò server song song (StreamRacing), Bỏ qua Intro/Outro động, Thumbnail Preview khi tua WebVTT Sprite, Picture-in-Picture (Android 8+), MediaSession phím cứng & gợi ý Trình phát ngoài khi gặp AC3/DTS.\n- Tizi IPTV XMLTV EPG: Hiển thị chương trình Đang chiếu/Tiếp theo và bộ lọc nhóm Thể thao thông minh.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
+  "sha256": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
-  "sha256_armeabi-v7a": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
-  "sha256_arm64": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76",
-  "sha256_x86_64": "f6d5507eb3942c93bd54baa26f62094e9333347d08e63433fdfa2ace4ce61f76"
+  "sha256_universal": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
+  "sha256_armeabi-v7a": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
+  "sha256_arm64-v8a": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca",
+  "sha256_x86_64": "4e31eae4958cd4f7fa3a0b84ae1b1b65397ca697757f5c01fff50a4f05a042ca"
 }
