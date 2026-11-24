@@ -1,18 +1,19 @@
 {
-  "versionCode": 10011,
-  "versionName": "1.1.0",
-  "buildTimestamp": "2026-11-24T22:50:00+07:00",
-  "releaseNotes": "zFim TV Native v1.1.0 (Stream Racing Priority, Anti-Hardsub Mirroring & D-Pad Ergonomic Flow):\n- Tối ưu Stream Racing: Luôn ưu tiên giữ luồng Song Ngữ nếu còn hoạt động tốt thay vì nhảy cóc sang server Vietsub mirror nhanh hơn.\n- Bóc tách nguồn thông minh: Ngăn chặn gán nhầm server Vietsub/KK vào nhãn Song Ngữ khi nguồn chỉ là bản hardsub gương.\n- Nâng cấp điều hướng D-pad & Phím tắt Menu: Tối ưu focus chuyển đổi tức thời giữa các cụm nút điều khiển trình phát; phím MENU mở thẳng sheet Nguồn/Phụ đề/Âm thanh.\n- Hoàn thiện Phụ đề Song ngữ & Bàn phím tìm kiếm TV ảo 6 cột chuẩn Android TV.",
+  "versionCode": 10012,
+  "versionName": "1.2.0",
+  "buildTimestamp": "2026-11-24T23:56:30+07:00",
+  "releaseNotes": "zFim TV Native v1.2.0 (zFimtv_launcher — Không gian Điện ảnh & Hệ thống TV):\n- Chế độ zFimtv Launcher (Bật/Tắt linh hoạt trong Cài đặt -> zFimtv Launcher): Đặt làm Màn hình chính Android TV mà vẫn giữ trọn Hero Poster, Auto-Trailer & Kệ phim.\n- Thanh Hệ thống & Apps Dock + App Drawer 5 cột: Ghim/ẩn/sắp xếp ứng dụng TV, chuyển nhanh Ngõ vào TV (HDMI/AV/USB) và Đồng hồ trực tiếp.\n- Local ADB không cần PC: Cấp quyền tự động 1 chạm (Chế độ An toàn tự đóng cổng ADB hoặc Duy trì).\n- CleanYourTV Debloater: Tự nhận diện mẫu TV, dọn rác hệ thống an toàn, quản lý Launcher gốc và Khôi phục 1 chạm.\n- Fast Boot, Khóa nút Home OEM, Caffeine & Bảng điều khiển nhanh Overlay trên mọi ứng dụng.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "56687d5405ebcdb18c5aed9014201cdb8145f0a1b28524843957610c142fc490",
+  "sha256": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "56687d5405ebcdb18c5aed9014201cdb8145f0a1b28524843957610c142fc490",
-  "sha256_armeabi-v7a": "56687d5405ebcdb18c5aed9014201cdb8145f0a1b28524843957610c142fc490",
-  "sha256_arm64-v8a": "56687d5405ebcdb18c5aed9014201cdb8145f0a1b28524843957610c142fc490",
-  "sha256_x86_64": "56687d5405ebcdb18c5aed9014201cdb8145f0a1b28524843957610c142fc490"
+  "sha256_universal": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6",
+  "sha256_armeabi-v7a": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6",
+  "sha256_arm64": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6",
+  "sha256_arm64-v8a": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6",
+  "sha256_x86_64": "4d7355537cb09fd50174c0e0461aaf4e9779b6ec12b6be66f3836b6930e798d6"
 }
