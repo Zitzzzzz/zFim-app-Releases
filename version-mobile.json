@@ -1,14 +1,14 @@
 {
-  "versionCode": 10550,
-  "versionName": "0.1.55",
-  "buildTimestamp": "2026-11-24T16:26:46Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.55 (Build 10550) — Droplist Giọng Đọc, Thuyết Minh Theo Thoại Nhân Vật & Khóa OTA Nền Tảng Khác:\n1) Gom toàn bộ TTS Engine và hàng chục giọng đọc (11 VieNeu Nano, 25 VieNeu Turbo, Clone & Cộng đồng) vào Droplist gọn gàng kèm nút Nghe thử trong cả Cài đặt và Player.\n2) Thuyết minh theo thoại nhân vật (AI Roleplay đa vai M1/M2/F1/F2): Tự tách lượt hội thoại dạng dấu gạch đầu dòng, tự phân vai cho cả phụ đề Tiếng Việt có sẵn (kể cả khi không dùng LLM Key qua đại từ & lượt thoại, hoặc LLM có ngữ cảnh tên phim).\n3) Tách riêng kênh OTA di động (version-mobile.json) & khóa OTA đa nền tảng (macOS/Windows/iOS/Android TV giữ nguyên v0.1.47, chấm dứt vòng lặp báo cập nhật lỗi).",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.55/app-release.apk",
-  "sha256": "a3830418e98a147d9385e0da33ff65863e0505f7cd7ff84392e9ff57f89f1eb5",
+  "versionCode": 10560,
+  "versionName": "0.1.56",
+  "buildTimestamp": "2026-11-24T17:20:17Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.56 (Build 10560) — AI Nghe Thoại Tạo Phụ Đề Tiếng Việt (Offline & Cloud) & Tách Công Tắc Độc Lập:\n1) Nghe thoại Look-ahead (+12–20s trước khung hình) cho phim AI / RAW không có phụ đề rời: hỗ trợ đa ngữ Anh / Trung / Hàn / Nhật / Quảng Đông → tự dịch Tiếng Việt → hiện phụ đề đơn/song ngữ và xuất file .srt.\n2) Song song cả 2 chế độ để kiểm thử: Offline mặc định (Silero VAD + SenseVoice-Small INT8 ONNX ~241 MB tải rời trong kho zApp) và Cloud Look-ahead (Groq Whisper v3-Turbo / Gemini Audio / Hybrid).\n3) Tự động khóa ngôn ngữ tập phim + nhận diện cao độ giọng Pitch F0 để gắn [M]/[F].\n4) Tách riêng 2 công tắc độc lập trong trình phát: (1) AI Tạo phụ đề từ giọng nói tại tab Phụ đề và (2) Lồng tiếng AI tại tab Thuyết minh. Desktop/iOS/TV giữ nguyên v0.1.47.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-release.apk",
+  "sha256": "4c7816d533dfa51cd2e883ef9cf87010309ec1ae41ef3299d7009d81380f6ff1",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10550,
-      "versionName": "0.1.55",
+      "versionCode": 10560,
+      "versionName": "0.1.56",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.55/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.55/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.55/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.55/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "a3830418e98a147d9385e0da33ff65863e0505f7cd7ff84392e9ff57f89f1eb5",
-  "sha256_armeabi-v7a": "bb413f93c997b40b2dcca63e6b57cb383004010c8486694eeb78a237ff7b318d",
-  "sha256_arm64": "21796a48ee31184673243172e1d6293ea44d76572f408d34a6c6944b1b408dc3",
-  "sha256_x86_64": "e801e03588189490c342278142b498878d3d0ab258f36bc7c19db5f7578a558a",
+  "sha256_universal": "4c7816d533dfa51cd2e883ef9cf87010309ec1ae41ef3299d7009d81380f6ff1",
+  "sha256_armeabi-v7a": "cea97e006e4c1a9f5891c22c4fe04d766ba21639df439328841e73bb5cccb374",
+  "sha256_arm64": "38e04426c6e351b2fb5ad20da464d539ee379d6573cab416731e3038deb15dd2",
+  "sha256_x86_64": "99320e1d08aa9f1d4280613108a018214590cf5ef33ee06a222f2e7e4b612d14",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
