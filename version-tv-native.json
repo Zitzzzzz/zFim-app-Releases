@@ -1,19 +1,19 @@
 {
-  "versionCode": 10013,
-  "versionName": "1.2.1",
-  "buildTimestamp": "2026-11-25T09:57:30+07:00",
-  "releaseNotes": "zFim TV Native v1.2.1 (Sửa lỗi Nạp nguồn zFim01 & Đồng bộ QR Camera điện thoại):\n- Sửa triệt để lỗi nhập mã zFim01 / zfim01: Tự động liên kết và tải kho nguồn zFim01 mới nhất (v1.6.1, 21 nguồn) từ máy chủ bất kể viết hoa/thường hay ký tự ẩn IME; bổ sung nút 1 chạm \"Nạp nhanh Kho chính thức zFim01\" và nhấn Enter để gửi ngay.\n- Nâng cấp Đồng bộ QR qua Camera điện thoại: QR mở thẳng trang Web Pairing /pair?code=... cho phép mọi Camera/Zalo/Trình duyệt trên điện thoại gửi Kho nguồn zFim01 hoặc Link JSON + Cloud Sync sang TV chỉ với 1 chạm (giữ nguyên tương thích nhập mã 6 ký tự trong app zFim).\n- Chuẩn hóa máy chủ Edge Gateway /api/sources/zfim01.json và chống crash khi đồng bộ phiên QR trên TV.",
+  "versionCode": 10014,
+  "versionName": "1.2.2",
+  "buildTimestamp": "2026-11-25T11:14:00+07:00",
+  "releaseNotes": "zFim TV Native v1.2.2 (Sửa triệt để nguồn YanHH3D + Bộ Quản lý Kho nguồn đầy đủ):\n- Sửa lỗi nguồn YanHH3D (yanhh3d): tự động theo chuỗi chuyển hướng đa chặng (bit.ly -> yanhh3d.baby -> yanhh3d.now), bổ sung retry Clean Cloudflare IP, cập nhật kho zFim01 v1.6.2 (yanhh3d v1.0.7) để tải đủ 17 phân loại phim.\n- Tích hợp ZfimGlideModule (OkHttp DoH 1.1.1.1/8.8.8.8 + Clean Cloudflare IP + TLSv1.2) kèm GlideUrl User-Agent/Referer để hiển thị đầy đủ 100% poster, backdrop & logo phim.\n- Bổ sung Bộ Quản lý Kho nguồn & Addon chuyên nghiệp (giống zFim Flutter): tách tab Nguồn Đã Cài & Kho Nguồn, bộ lọc Phim/IPTV/Stremio, bật/tắt nguồn, làm mới domain động, đồng bộ/xóa từng kho, cài nhanh 1 chạm zFim01, dán JSON trực tiếp & Reset Clean Platform.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978",
+  "sha256": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978",
-  "sha256_armeabi-v7a": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978",
-  "sha256_arm64": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978",
-  "sha256_arm64-v8a": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978",
-  "sha256_x86_64": "dcbae331dceec38c5ebebe5b8202719c0f4c5a07f23bd6da518a150ef7905978"
+  "sha256_universal": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
+  "sha256_armeabi-v7a": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
+  "sha256_arm64": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
+  "sha256_arm64-v8a": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
+  "sha256_x86_64": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89"
 }
