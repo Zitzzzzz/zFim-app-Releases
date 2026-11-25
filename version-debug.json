@@ -1,14 +1,14 @@
 {
-  "versionCode": 10560,
-  "versionName": "0.1.56",
-  "buildTimestamp": "2026-11-24T17:20:17Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.56 (Build 10560) — AI Nghe Thoại Tạo Phụ Đề Tiếng Việt (Offline & Cloud) & Tách Công Tắc Độc Lập:\n1) Nghe thoại Look-ahead (+12–20s trước khung hình) cho phim AI / RAW không có phụ đề rời: hỗ trợ đa ngữ Anh / Trung / Hàn / Nhật / Quảng Đông → tự dịch Tiếng Việt → hiện phụ đề đơn/song ngữ và xuất file .srt.\n2) Song song cả 2 chế độ để kiểm thử: Offline mặc định (Silero VAD + SenseVoice-Small INT8 ONNX ~241 MB tải rời trong kho zApp) và Cloud Look-ahead (Groq Whisper v3-Turbo / Gemini Audio / Hybrid).\n3) Tự động khóa ngôn ngữ tập phim + nhận diện cao độ giọng Pitch F0 để gắn [M]/[F].\n4) Tách riêng 2 công tắc độc lập trong trình phát: (1) AI Tạo phụ đề từ giọng nói tại tab Phụ đề và (2) Lồng tiếng AI tại tab Thuyết minh. Desktop/iOS/TV giữ nguyên v0.1.47.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk",
-  "sha256": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7",
+  "versionCode": 10570,
+  "versionName": "0.1.57",
+  "buildTimestamp": "2026-11-25T08:32:28Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.57 (Build 10570) — Sửa kẹt trích audio Look-ahead, Nút Test Key ASR/LLM & Nút Sub AI trên Player:\n1) Sửa lỗi vòng lặp seek nền mỗi 350ms trong VodAudioLookAheadExtractor khiến phim nguồn mạng chậm không thu được âm thoại, đồng thời hạ ngưỡng VAD Cloud fallback xuống 0.0065 để bắt tốt tiếng thoại nhỏ.\n2) Bổ sung nút Test Key & Kết nối trực tiếp cho cả Groq/Gemini ASR và API Dịch thuật LLM (hỗ trợ model thinking Qwen 3.8 + tự fallback nếu endpoint không hỗ trợ response_format).\n3) Bổ sung công tắc Tự động bật Tạo phụ đề AI khi mở phim, nút đồng bộ Groq Key 1 chạm sang Dịch thuật LLM, và nút Sub AI ngay trên thanh điều khiển trình phát.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk",
+  "sha256": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10560,
-      "versionName": "0.1.56",
+      "versionCode": 10570,
+      "versionName": "0.1.57",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -44,17 +44,17 @@
     "ios-simulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS-Simulator.ipa",
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip",
-    "debug": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.56/app-debug.apk"
+    "debug": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-debug.apk"
   },
-  "sha256_universal": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7",
-  "sha256_armeabi-v7a": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7",
-  "sha256_arm64": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7",
-  "sha256_x86_64": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7",
+  "sha256_universal": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae",
+  "sha256_armeabi-v7a": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae",
+  "sha256_arm64": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae",
+  "sha256_x86_64": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
   "sha256_ios_simulator": "8177d23ea25c9dceac8adb709db864d4a9f6c91c8af67925925e0978a03501cc",
   "sha256_windows_setup": "0a75f3e130bcd656fef8cded5fe1934bedde4d74158f1a3a978b0d7e3b527b17",
   "sha256_windows_portable": "fd30da6c7cd7acb1e04bd4810657183158319fc078fbebff83149ee115c23594",
-  "sha256_debug": "cd4eeb1f582a5292ac2a3df2b3d7db014feca6f1a13b7dfebf6db10171f536c7"
+  "sha256_debug": "2b4646e675d75bf1bde8ab6f7e455a1ad8ee1d57f19286ca0ea2c2cc21760eae"
 }
