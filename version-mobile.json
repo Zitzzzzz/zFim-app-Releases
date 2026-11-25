@@ -1,14 +1,14 @@
 {
-  "versionCode": 10600,
-  "versionName": "0.1.60",
-  "buildTimestamp": "2026-11-25T16:50:22Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.60 (Build 10600) — Sửa mất phụ đề AI khi tua, Fallback 429, Dịch theo ngữ cảnh phim & Khung phát sạch Song Ngữ:\n1) Sửa triệt để lỗi mất phụ đề AI khi tua: Tách sessionGen và taskGen trong VodAudioLookAheadExtractor (trước đây seekTo tăng generation khiến captureProcessor ngừng thu PCM vĩnh viễn), đồng bộ phím mũi tên/D-pad gọi _performSeek và thêm cooldown chống re-seek lặp sau tua.\n2) Fallback thông minh khi Groq/LLM lỗi 429 hoặc hết Key: Hỗ trợ nhập nhiều API key (phân tách bằng dấu phẩy/xuống dòng) để xoay vòng tự động, tự chuyển sang Offline SenseVoice ONNX trong lúc Groq tạm nghỉ 429 và fallback sang FreeWebTranslate nếu LLM dịch lỗi.\n3) Prompt dịch ngữ cảnh phim thông minh: Truyền Tên phim, Thể loại (Tiên hiệp/Cổ trang, Khoa học, Drama Hàn, Anime...), Quốc gia & Tóm tắt phim vào LLM để chọn đúng đại từ (ta/ngươi, huynh/muội, anh/em...) và thuật ngữ.\n4) Sửa giao diện nguồn Song Ngữ 500Phim & ChợPhim: Cô lập khung player sạch toàn màn hình (ẩn header/banner S8, AD88, QQ88, 789, shortlink), chặn VAST trên playembed.vip, truyền query ?sv= cho ChợPhim và bật lại trình hỗ trợ Turnstile.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.60/app-release.apk",
-  "sha256": "f6d7223295d4ff731960344a7b89e6b275eb27b6a7f724cb209f2a50d0576231",
+  "versionCode": 10610,
+  "versionName": "0.1.61",
+  "buildTimestamp": "2026-11-25T17:51:36Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.61 (Build 10610) — Chống thuyết minh lặp 2 lần, lọc tiếng cảm thán/cười & tăng tốc đồng bộ đầu phim/sau tua:\n1) Sửa lỗi thuyết minh lặp lại 2 lần câu thoại AI: Lưu _spokenCueKeys + chống trùng theo nội dung trong DubbingController để appendAsrCues không bao giờ reset chỉ số phát khi câu hiện tại đang đọc dở.\n2) Bỏ qua từ biểu cảm ngắn (A, Ư, Hừ, Ờ, À, Ừm, Ah, Hmm, 啊, 嗯...) và giọng cười (ha ha ha, hihi, hehe, 哈哈, [cười]...) trước cả bước dịch LLM lẫn bước đọc TTS.\n3) Tối ưu đồng bộ đầu phim & sau khi tua: Seek trước +3s cho ExoPlayer ngay khi khởi tạo/tua, hạ mục tiêu look-ahead về 8–13s (tốc độ 1.65x thay vì 2.4x để không gây nghẽn 429 đầu phim), đồng bộ khởi động ASR sau khi player chính seek tới resumeMs, tự loại bỏ segment Cloud đã quá hạn khỏi hàng đợi và khóa ngôn ngữ nhanh sau 2 câu chuẩn.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.61/app-release.apk",
+  "sha256": "70aa02cd6f9f343b0811f4ed1bc5658fd7845c0462458b5d2ea02e1be9acca65",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10600,
-      "versionName": "0.1.60",
+      "versionCode": 10610,
+      "versionName": "0.1.61",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.60/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.60/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.60/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.60/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.61/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.61/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.61/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.61/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "f6d7223295d4ff731960344a7b89e6b275eb27b6a7f724cb209f2a50d0576231",
-  "sha256_armeabi-v7a": "3261c4a94a70492960e3e2e671dedcebbd91888b7cc2780d2901a71b449debf2",
-  "sha256_arm64": "d5ee5559adfc3258b56f8468d7983d8c3aef6af04599fcb47a1cc278ee415bfe",
-  "sha256_x86_64": "eccb5bd0ac7edb397f15fcea63e65a9076423db257d779ae6632f8e3a6a6f33e",
+  "sha256_universal": "70aa02cd6f9f343b0811f4ed1bc5658fd7845c0462458b5d2ea02e1be9acca65",
+  "sha256_armeabi-v7a": "a7186dd69c34dacb89b809f5d91ac87a90689a9747ce4a23390bf5b60ffb1c7e",
+  "sha256_arm64": "28377208ac8deb7c254fd6bba2d22c4156761a6a3c19c291ede13e4b558157b5",
+  "sha256_x86_64": "164b68d364d62707aad34226ee30123c6b3d77564cf68c1803984b1d5b318ef3",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
