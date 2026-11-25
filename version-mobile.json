@@ -1,14 +1,14 @@
 {
-  "versionCode": 10570,
-  "versionName": "0.1.57",
-  "buildTimestamp": "2026-11-25T08:32:28Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.57 (Build 10570) — Sửa kẹt trích audio Look-ahead, Nút Test Key ASR/LLM & Nút Sub AI trên Player:\n1) Sửa lỗi vòng lặp seek nền mỗi 350ms trong VodAudioLookAheadExtractor khiến phim nguồn mạng chậm không thu được âm thoại, đồng thời hạ ngưỡng VAD Cloud fallback xuống 0.0065 để bắt tốt tiếng thoại nhỏ.\n2) Bổ sung nút Test Key & Kết nối trực tiếp cho cả Groq/Gemini ASR và API Dịch thuật LLM (hỗ trợ model thinking Qwen 3.8 + tự fallback nếu endpoint không hỗ trợ response_format).\n3) Bổ sung công tắc Tự động bật Tạo phụ đề AI khi mở phim, nút đồng bộ Groq Key 1 chạm sang Dịch thuật LLM, và nút Sub AI ngay trên thanh điều khiển trình phát.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-release.apk",
-  "sha256": "eb721a06c4c113e1a77a232262ce2eeb6687e8176a7dc86fd12900ed434172b8",
+  "versionCode": 10580,
+  "versionName": "0.1.58",
+  "buildTimestamp": "2026-11-25T10:25:59Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.58 (Build 10580) — Sửa lỗi lệch thời gian phụ đề AI & Chế độ Debug giữa màn hình:\n1) Sửa triệt để lỗi lệch timeline Look-ahead ASR: Bọc ForwardingAudioSink lấy trực tiếp presentationTimeUs/outputStreamOffsetUs từ MediaCodecAudioRenderer thay cho exoPlayer.currentPosition sai thread, tránh vòng lặp tốc độ 2.25x sai lệch và tích tụ trôi mẫu VAD.\n2) Hiển thị phụ đề dịch AI ở giữa màn hình (tách biệt với hardsub phía dưới) kèm tag thời gian [start→end | Δ @VideoPos] ngay sau câu thoại để tiện đối chiếu chụp ảnh.\n3) Bổ sung bảng Telemetry Debug góc trên bên trái (VID/EXO/PTS/Lead/Speed/VAD/ASR & Translate latency/NOW/Prev/Next/LAST).",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.58/app-release.apk",
+  "sha256": "5445db5c63ca24b27997a20d968c57fbb224a7f14c9435f35ff178107f58eb8f",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10570,
-      "versionName": "0.1.57",
+      "versionCode": 10580,
+      "versionName": "0.1.58",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.57/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.58/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.58/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.58/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.58/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "eb721a06c4c113e1a77a232262ce2eeb6687e8176a7dc86fd12900ed434172b8",
-  "sha256_armeabi-v7a": "ac869826d40b56cf0353654be88c4ba44680de58437e1350f04341a228cc2e14",
-  "sha256_arm64": "3b4c07e6539a1506503f979a878d479b35e636f745ff732e6d736b6a8c3d6592",
-  "sha256_x86_64": "6e74bc90dcf64ec07d2bb3e1d0bd4a5bcdfd746c00131e85273814fd8e791de0",
+  "sha256_universal": "5445db5c63ca24b27997a20d968c57fbb224a7f14c9435f35ff178107f58eb8f",
+  "sha256_armeabi-v7a": "25e3f4bb305ac4a8616666f9f4a811de863337e33c8a7d3f08930c5d1b40e1b3",
+  "sha256_arm64": "65b788cd9e0da1aeddf1f2d43f9f0724c2735a654c74a69c142c5407ca89edee",
+  "sha256_x86_64": "7b1de614785b61c673a0fc341ecce0a89121a0bff33ac22e4b759b3fe78fc38f",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
