@@ -1,14 +1,14 @@
 {
-  "versionCode": 10640,
-  "versionName": "0.1.64",
-  "buildTimestamp": "2026-11-26T02:45:23Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.64 (Build 10640) — Xử lý mượt giai đoạn mở đầu video, Học tốc độ thoại theo thể loại & Sửa triệt để Nghe tắt màn hình + Thông báo Media:\n1) Giai đoạn mở đầu 0–60s mượt ngay từ giây đầu (hết im lặng 30s rồi xả dồn dập): Nâng tốc độ warm-up look-ahead lên 2.8x (trước SonicAudioProcessor nên giữ nguyên âm sắc 1.0x), thêm Intro Bootstrap VAD trong 25s đầu (tách câu 3.8–6.8s thay vì kẹt 12.5s), đồng bộ cờ vadInSpeech + dubbingBufferedAhead khi đang pre-buffer 15–20s và cơ chế bỏ câu quá hạn nếu đã có câu mới đúng nhịp.\n2) Học hỏi thông minh theo thể loại video (Review YouTube, Short/TikTok, Livestream, Phim): Tự nhận diện VideoSpeechProfile, đo nhịp thoại của người review/livestreamer qua các câu đầu để hiệu chỉnh tốc độ nền, giới hạn biên độ trượt giữa các câu chống giật tăng/giảm đột ngột và lưu cấu hình tốc độ riêng theo từng thể loại.\n3) Sửa triệt để Nghe tắt màn hình & Thanh điều khiển Media trên thông báo: Tắt pauseUponEnteringBackgroundMode mặc định của media_kit Video, ngắt vid=no khi tắt màn để không nghẽn GPU surface và bật lại vid=auto khi mở màn; cấp quyền runtime POST_NOTIFICATIONS trên Android 13–16, xin AudioFocus chuẩn Media, gắn MediaStyle icon + điều khiển Notification cho cả MediaKit và NativePlayerActivity.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-release.apk",
-  "sha256": "b1095d2b6f8145dbb2af882ed738d64fa0cdd80510fe2d650c805f44c6a76a1e",
+  "versionCode": 10650,
+  "versionName": "0.1.65",
+  "buildTimestamp": "2026-11-26T03:19:46Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.65 (Build 10650) — Khôi phục đọc liền mạch trọn câu không ngắt quãng & Sửa triệt để lỗi sót dịch tiếng Tây Ban Nha / ngôn ngữ châu Âu:\n1) Khôi phục đọc liền mạch trọn câu, hết đoạn: Điều chỉnh Silero VAD tránh cắt vội khi lấy hơi (softPause 220–240ms, softMax 5.2–7.5s, gắn cờ forcedSplit khi cắt giữa mạch thoại), bỏ cơ chế nhả vội câu mở đầu khi chưa hết câu, tự tách mượt phần câu đã kết thúc ở dấu chấm giữa đoạn nối và gom tiếp phần đuôi sang câu kế, kết hợp hậu kiểm gom đoạn trên DubbingController.\n2) Sửa lỗi dịch tiếng Tây Ban Nha & đa ngữ (câu dịch được, câu vẫn giữ nguyên bản gốc): Chuẩn hóa ISO 639-1 đầy đủ trong CloudAsrEngine (spanish -> es, german -> de, portuguese -> pt), tránh nhận nhầm dấu sắc/huyền tiếng Tây Ban Nha thành tiếng Việt, từ chối và tự động dịch lại bằng sl=auto (cả ở FreeWeb lẫn LiveAsrCoordinator) khi bộ dịch chính trả về nguyên văn tiếng nước ngoài, bổ sung Tiếng Tây Ban Nha/Pháp/Đức/Bồ Đào Nha/Nga/Thái vào danh sách ngôn ngữ nguồn ASR.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-release.apk",
+  "sha256": "28105bc111827f2b37fff773c88e56af3c9ca4e72ad0583ecfc25cc7365f6aac",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10640,
-      "versionName": "0.1.64",
+      "versionCode": 10650,
+      "versionName": "0.1.65",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "b1095d2b6f8145dbb2af882ed738d64fa0cdd80510fe2d650c805f44c6a76a1e",
-  "sha256_armeabi-v7a": "768d0233766c24886ccd51064d15734ccd73ea72ddcb8123ec6a1d49e9ff9dc6",
-  "sha256_arm64": "111ebc10752b98dc81c6641b2224880b0135c7ef796774b2e1fd98ae47722c6e",
-  "sha256_x86_64": "3fae69c979f4869c9dc3108e34da454be560d31d905a34bf739a16dbb4be76bf",
+  "sha256_universal": "28105bc111827f2b37fff773c88e56af3c9ca4e72ad0583ecfc25cc7365f6aac",
+  "sha256_armeabi-v7a": "276438e07dc75ebceeb0d1d831411ef0457c154e1c5272a00617afda21c388f6",
+  "sha256_arm64": "c31897e5c1bb12f02f040b212d8b9a4f6bb871599641cdef599e6fa0d7dd455e",
+  "sha256_x86_64": "847e369a09d11f5222b6f8212104a5dca56d49a17256f2511b8893bcef49843c",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
