@@ -1,14 +1,14 @@
 {
-  "versionCode": 10670,
-  "versionName": "0.1.67",
-  "buildTimestamp": "2026-11-26T04:14:30Z",
-  "releaseNotes": "Bản phát hành hoàn chỉnh tính năng AI Dịch Phụ Đề & Thuyết Minh v0.1.67 (Build 10670):\n1) Tối ưu pipeline thuyết minh theo Spec R-01..R-06: Nâng cấp Android audio sink phát trực tiếp trong bộ nhớ (playBytes / MediaDataSource 0-I/O + trả về mốc phần cứng), thanh lọc thế hệ khi tua (flushStale + reset scheduler), trạng thái làm nóng đầu video (DubbingWarmupState), ngữ cảnh lân cận k-1/k+1 + lọc không đọc nguyên văn lỗi, và nhả âm lượng phim mượt trên khoảng lặng dài.\n2) Hiển thị phụ đề chuẩn Điện Ảnh (xóa bỏ HUD & nhãn debug trên màn hình): Gỡ toàn bộ hộp telemetry, timestamp delta và thẻ [M]/[F] khỏi khung hình phim; đưa phụ đề AI song ngữ/đơn ngữ vào trình kết xuất điện ảnh sạch đẹp.\n3) Toàn quyền tùy biến phụ đề chuẩn rạp: Hỗ trợ chỉnh cỡ chữ (60%-180%), kiểu font, chữ đậm/thường, chiều cao dòng (1.0x-1.8x), màu chữ & độ trong suốt, viền chữ & màu viền chữ, nền chữ & độ trong nền, căn lề trái/giữa/phải và kéo vị trí cao/thấp ngay trong Player lẫn Cài đặt.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.67/app-release.apk",
-  "sha256": "5d079e798939c14a4fba5df2b59f08921d9b4270619e13f38e56d8ec2ff921f9",
+  "versionCode": 10680,
+  "versionName": "0.1.68",
+  "buildTimestamp": "2026-11-26T05:07:26Z",
+  "releaseNotes": "Cập nhật AI Dịch Xưng Hô Theo Ngữ Cảnh & Nhận Diện Thể Loại Phim v0.1.68 (Build 10680):\n1) Triển khai bộ phân tích bối cảnh & quan hệ nhân vật một lần (DubbingSceneProfile - Spec Part 2 R-A/R-B/R-C): AI tự học thể loại, bối cảnh (hiện đại / cổ trang) và cặp vai chính từ thoại mẫu để chọn đúng xưng hô thuần Việt (anh/em, ta/nàng - thiếp/chàng, ta/ngươi, cậu/tớ, tao/mày, anh chị/em con) xuyên suốt tập phim.\n2) Nâng cấp học ngữ cảnh cho cả Live ASR / video dán link (YouTube, Facebook, TikTok): tự phân tích bối cảnh phim khi đủ 4-12 câu thoại đầu, sửa lỗi nhận nhầm tiêu đề phim có 'vs' hoặc thiếu tag thành review công nghệ.\n3) Khắc phục triệt để lỗi dịch toàn 'tôi - bạn' khi chạy bản dịch dự phòng hoặc phim chưa cấu hình LLM, đồng thời làm sạch cấu hình tái sử dụng khóa Gemini cho trình dịch hội thoại.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-release.apk",
+  "sha256": "7fb9f496a82a8d83e03f643839e1a2435cb2f45137a105f91475420702ddc770",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10670,
-      "versionName": "0.1.67",
+      "versionCode": 10680,
+      "versionName": "0.1.68",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.67/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.67/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.67/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.67/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "5d079e798939c14a4fba5df2b59f08921d9b4270619e13f38e56d8ec2ff921f9",
-  "sha256_armeabi-v7a": "e9ad4cc13e73fb632fbebfdf5fe53943a6e9e99f07bb77937f965d0fb7419d0a",
-  "sha256_arm64": "47be52262ed24f4f70a3ddce2f238d3ef97f9132be8c6210770c3282fa64c1f2",
-  "sha256_x86_64": "f2fe9bb731ea0cf8a6d4a8029e467d5be9952f0d3b2cea5a1418047bb880ecf3",
+  "sha256_universal": "7fb9f496a82a8d83e03f643839e1a2435cb2f45137a105f91475420702ddc770",
+  "sha256_armeabi-v7a": "da69fb8fe03dc0960c5a8e101d27b1e10d58f1cde2c6336fb9ea9385fbc2c095",
+  "sha256_arm64": "68b9d3f5149bad6f1ab5a387d26a40e07f66152fd17497f789d74a2829b5f8c7",
+  "sha256_x86_64": "55fb2e2e0e31a5abf6b765becfd7088d051bf4cc4bf89e5617905d00a5444bd0",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
