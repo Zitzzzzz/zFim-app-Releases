@@ -1,14 +1,14 @@
 {
-  "versionCode": 10680,
-  "versionName": "0.1.68",
-  "buildTimestamp": "2026-11-26T05:07:26Z",
-  "releaseNotes": "Cập nhật AI Dịch Xưng Hô Theo Ngữ Cảnh & Nhận Diện Thể Loại Phim v0.1.68 (Build 10680):\n1) Triển khai bộ phân tích bối cảnh & quan hệ nhân vật một lần (DubbingSceneProfile - Spec Part 2 R-A/R-B/R-C): AI tự học thể loại, bối cảnh (hiện đại / cổ trang) và cặp vai chính từ thoại mẫu để chọn đúng xưng hô thuần Việt (anh/em, ta/nàng - thiếp/chàng, ta/ngươi, cậu/tớ, tao/mày, anh chị/em con) xuyên suốt tập phim.\n2) Nâng cấp học ngữ cảnh cho cả Live ASR / video dán link (YouTube, Facebook, TikTok): tự phân tích bối cảnh phim khi đủ 4-12 câu thoại đầu, sửa lỗi nhận nhầm tiêu đề phim có 'vs' hoặc thiếu tag thành review công nghệ.\n3) Khắc phục triệt để lỗi dịch toàn 'tôi - bạn' khi chạy bản dịch dự phòng hoặc phim chưa cấu hình LLM, đồng thời làm sạch cấu hình tái sử dụng khóa Gemini cho trình dịch hội thoại.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-release.apk",
-  "sha256": "7fb9f496a82a8d83e03f643839e1a2435cb2f45137a105f91475420702ddc770",
+  "versionCode": 10690,
+  "versionName": "0.1.69",
+  "buildTimestamp": "2026-11-26T06:06:26Z",
+  "releaseNotes": "Sửa lỗi đồng bộ khởi đầu & mất tiếng thuyết minh trên YouTube / Facebook v0.1.69 (Build 10690):\n1) Sửa triệt để lỗi YouTube chỉ có phụ đề nhưng mất tiếng thuyết minh sau khi xem video khác (Facebook): reset activeSessionGen khi giải phóng DubbingAudioPlayer, cấp generation epoch tăng dần cho mỗi phiên Player, và ngăn bộ quét phụ đề rỗng ghi đè luồng Live ASR.\n2) Sửa lỗi Facebook chậm thuyết minh 30s đầu video & khi tua rồi đọc đuổi siêu nhanh: liên kết prebuffer giữa LiveAsrCoordinator và DubbingController để không làm mất âm thanh đã tổng hợp khi tạm dừng đệm, reset đồng hồ decodedPosMs/exoPosMs khi tua, và kích hoạt phát câu thoại ngay thời khắc nhả play.\n3) Hủy tức thì tác vụ Edge TTS cũ đang kẹt trong hàng đợi khi tua (TtsCancelToken listener) và không xóa bộ nhớ đệm giọng đọc khi dùng phụ đề AI ASR.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-release.apk",
+  "sha256": "b1e436b30659099d7a3c045c83ac45638d995d87911bc0e3a8853085fa0e0221",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10680,
-      "versionName": "0.1.68",
+      "versionCode": 10690,
+      "versionName": "0.1.69",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.68/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "7fb9f496a82a8d83e03f643839e1a2435cb2f45137a105f91475420702ddc770",
-  "sha256_armeabi-v7a": "da69fb8fe03dc0960c5a8e101d27b1e10d58f1cde2c6336fb9ea9385fbc2c095",
-  "sha256_arm64": "68b9d3f5149bad6f1ab5a387d26a40e07f66152fd17497f789d74a2829b5f8c7",
-  "sha256_x86_64": "55fb2e2e0e31a5abf6b765becfd7088d051bf4cc4bf89e5617905d00a5444bd0",
+  "sha256_universal": "b1e436b30659099d7a3c045c83ac45638d995d87911bc0e3a8853085fa0e0221",
+  "sha256_armeabi-v7a": "33de148ad048948eb8881137efb9169efd15024bed78cac420dcc5a9bc3b7c49",
+  "sha256_arm64": "cd8a41176d1ce41366944be425758bc250c1da975def765bf9bb51fdac262e23",
+  "sha256_x86_64": "06e12d3bdc74373a025067ec8a71de351525110acb4b538bd480acde217d7bce",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
