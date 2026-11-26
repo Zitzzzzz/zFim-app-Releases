@@ -1,0 +1,293 @@
+{
+  "$schema": "zfim/addon-json/v1",
+  "kind": "collection",
+  "id": "zfim99-nsfw",
+  "name": "zFim99 (NSFW 18+ VIP)",
+  "version": "1.0.1",
+  "description": "Kho nguồn Phim Người Lớn 18+ (NSFW) bảo mật cao cho zFim. Nguồn hoàn toàn ẩn, không tự động tích hợp, yêu cầu cấu hình thủ công và mật khẩu truy cập.",
+  "addons": [
+    {
+      "$schema": "zfim/addon-json/v1",
+      "kind": "single",
+      "id": "vlxx",
+      "name": "VLXX 18+ VIP",
+      "version": "1.0.1",
+      "description": "Kho phim sex người lớn VLXX (vlxx.net) - Tuyển chọn phim sex JAV Vietsub, phim sex Không Che, vụng trộm ngoại tình, sex học sinh, cấp 3, Âu Mỹ và XVIDEOS/XNXX cập nhật hàng ngày",
+      "logo": "https://vlxx.net/static/img/logo.png",
+      "base": "https://vlxx.net",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Referer": "https://vlxx.net/"
+      },
+      "types": [
+        "movie"
+      ],
+      "catalogs": [
+        {
+          "id": "moi-cap-nhat",
+          "type": "movie",
+          "name": "Mới Cập Nhật",
+          "endpoint": "/new/{page}/"
+        },
+        {
+          "id": "jav",
+          "type": "movie",
+          "name": "JAV Nhật Bản",
+          "endpoint": "/jav/{page}/"
+        },
+        {
+          "id": "vietsub",
+          "type": "movie",
+          "name": "Phim Sex Vietsub",
+          "endpoint": "/vietsub/{page}/"
+        },
+        {
+          "id": "khong-che",
+          "type": "movie",
+          "name": "Phim Sex Không Che",
+          "endpoint": "/khong-che/{page}/"
+        },
+        {
+          "id": "phim-sex-hay",
+          "type": "movie",
+          "name": "Phim Sex Hay Tuyển Chọn",
+          "endpoint": "/phim-sex-hay/{page}/"
+        },
+        {
+          "id": "vung-trom",
+          "type": "movie",
+          "name": "Vụng Trộm - Ngoại Tình",
+          "endpoint": "/vung-trom/{page}/"
+        },
+        {
+          "id": "hoc-sinh",
+          "type": "movie",
+          "name": "Sex Học Sinh",
+          "endpoint": "/hoc-sinh/{page}/"
+        },
+        {
+          "id": "cap-3",
+          "type": "movie",
+          "name": "Phim Cấp 3 Tuyển Chọn",
+          "endpoint": "/cap-3/{page}/"
+        },
+        {
+          "id": "chau-au",
+          "type": "movie",
+          "name": "Sex Mỹ - Châu Âu",
+          "endpoint": "/chau-au/{page}/"
+        },
+        {
+          "id": "xvideos",
+          "type": "movie",
+          "name": "XVIDEOS Tuyển Chọn",
+          "endpoint": "/xvideos/{page}/"
+        },
+        {
+          "id": "xnxx",
+          "type": "movie",
+          "name": "XNXX Tuyển Chọn",
+          "endpoint": "/xnxx/{page}/"
+        }
+      ],
+      "scrape": {
+        "list": {
+          "endpoint": "/new/{page}/",
+          "item": "#video-list .video-item, .video-item",
+          "map": {
+            "id": "a @href",
+            "name": ".video-name a @text",
+            "poster": "img.video-image @src",
+            "description": ".ribbon @text"
+          }
+        },
+        "search": {
+          "endpoint": "/search/{search}/{page}/",
+          "item": "#video-list .video-item, .video-item",
+          "map": {
+            "id": "a @href",
+            "name": ".video-name a @text",
+            "poster": "img.video-image @src",
+            "description": ".ribbon @text"
+          }
+        },
+        "meta": {
+          "endpoint": "/{slug}",
+          "map": {
+            "name": "h1.page-title @text",
+            "poster": "meta[property=\"og:image\"] @content",
+            "description": ".video-description @text",
+            "released": ".video-code @text",
+            "videos": {
+              "item": ".video-servers li",
+              "map": {
+                "title": "span.server @text",
+                "id": "@onclick"
+              }
+            }
+          }
+        },
+        "streams": {
+          "endpoint": "/{slug}",
+          "candidates": {
+            "selector": ".desktop.video-player, iframe, #video",
+            "attr": "data-src,src"
+          }
+        }
+      },
+      "streamFilters": {
+        "blocklistHosts": [
+          "facebook.com",
+          "google.com",
+          "adxcontent.com"
+        ],
+        "bannedTerms": [
+          "banner",
+          "promo",
+          "ads"
+        ],
+        "allowedIndicators": [
+          ".vl",
+          ".m3u8",
+          ".mp4",
+          "manifest-s1",
+          "manifest-s2",
+          "stream",
+          "gooqlevideo"
+        ]
+      }
+    },
+    {
+      "$schema": "zfim/addon-json/v1",
+      "kind": "single",
+      "id": "bvxx",
+      "name": "BVXX Không Che 18+ VIP",
+      "version": "1.0.1",
+      "description": "Kho phim khiêu dâm không che Vietsub BVXX (bvxx.mom) - Phim sex JAV không che, vụng trộm, Âu Mỹ, Trung Quốc, Việt Nam tuyển chọn chất lượng cao HD/Full HD",
+      "logo": "https://bvxx.mom/theme/vp/images/sp.png",
+      "base": "https://bvxx.mom",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "Referer": "https://bvxx.mom/"
+      },
+      "types": [
+        "movie"
+      ],
+      "catalogs": [
+        {
+          "id": "moi-cap-nhat",
+          "type": "movie",
+          "name": "Mới Cập Nhật",
+          "endpoint": "/danh-sach/vlxx-moi/trang-{page}.html"
+        },
+        {
+          "id": "vietsub",
+          "type": "movie",
+          "name": "BVXX Vietsub",
+          "endpoint": "/the-loai/vlxx-vietsub-1/trang-{page}.html"
+        },
+        {
+          "id": "khong-che",
+          "type": "movie",
+          "name": "BVXX Không Che",
+          "endpoint": "/the-loai/vlxx-khong-che-2/trang-{page}.html"
+        },
+        {
+          "id": "vung-trom",
+          "type": "movie",
+          "name": "BVXX Vụng Trộm",
+          "endpoint": "/the-loai/vlxx-vung-trom-3/trang-{page}.html"
+        },
+        {
+          "id": "nhat-ban",
+          "type": "movie",
+          "name": "BVXX Nhật Bản",
+          "endpoint": "/phim-nuoc/vlxx-nhat-ban-1/trang-{page}.html"
+        },
+        {
+          "id": "au-my",
+          "type": "movie",
+          "name": "BVXX Âu Mỹ",
+          "endpoint": "/phim-nuoc/vlxx-au-my-2/trang-{page}.html"
+        },
+        {
+          "id": "trung-quoc",
+          "type": "movie",
+          "name": "BVXX Trung Quốc",
+          "endpoint": "/phim-nuoc/vlxx-trung-quoc-3/trang-{page}.html"
+        },
+        {
+          "id": "viet-nam",
+          "type": "movie",
+          "name": "BVXX Việt Nam",
+          "endpoint": "/phim-nuoc/vlxx-viet-nam-4/trang-{page}.html"
+        }
+      ],
+      "scrape": {
+        "list": {
+          "endpoint": "/danh-sach/vlxx-moi/trang-{page}.html",
+          "item": ".widget-post",
+          "map": {
+            "id": "h3.entry-title a @href",
+            "name": "h3.entry-title a @text",
+            "poster": "img.post-thumb @src",
+            "description": ".TooltipContent span @text"
+          }
+        },
+        "search": {
+          "endpoint": "/?s={search}",
+          "item": ".widget-post",
+          "map": {
+            "id": "h3.entry-title a @href",
+            "name": "h3.entry-title a @text",
+            "poster": "img.post-thumb @src",
+            "description": ".TooltipContent span @text"
+          }
+        },
+        "meta": {
+          "endpoint": "/{slug}",
+          "map": {
+            "name": "h1 @text",
+            "poster": ".pt-img img @src",
+            "description": "#description-clip .message @text",
+            "released": ".grtx a[href*=\"year\"] @text",
+            "videos": {
+              "item": ".movie-part a.ep, .movie-button a.watch_button2",
+              "map": {
+                "title": "@text",
+                "id": "@href"
+              }
+            }
+          }
+        },
+        "streams": {
+          "endpoint": "/{slug}",
+          "candidates": {
+            "selector": ".movie-part a.ep, a.watch_button2, iframe, video, source",
+            "attr": "data-src,src,href"
+          }
+        }
+      },
+      "streamFilters": {
+        "blocklistHosts": [
+          "facebook.com",
+          "google.com",
+          "highperformanceformat.com",
+          "chaseherbalpasty.com",
+          "acscdn.com"
+        ],
+        "bannedTerms": [
+          "banner",
+          "promo",
+          "ads"
+        ],
+        "allowedIndicators": [
+          ".m3u8",
+          ".mp4",
+          "cdn2020",
+          "stream"
+        ]
+      }
+    }
+  ]
+}
