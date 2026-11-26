@@ -1,14 +1,14 @@
 {
-  "versionCode": 10760,
-  "versionName": "0.1.76",
-  "buildTimestamp": "2026-11-26T15:54:51Z",
-  "releaseNotes": "Nâng cấp toàn diện zBe & Sửa 5 nhóm lỗi DEBUG v0.1.76 (Build 10760):\n1) Trình phát zBe gọn gàng: xóa thanh & nút Phụ đề/Thuyết minh trùng lặp bên dưới video, chỉ giữ cụm điều khiển trong overlay; bỏ viền bao quanh nút -/+ tốc độ trên cả zBe và toàn màn hình.\n2) Khắc phục triệt để lỗi tải bình luận YouTube (tách token bình luận khỏi danh sách liên quan, tự động nạp bình luận đầu & phân trang Tải thêm) và bổ sung Đề xuất video tương tự từ lịch sử xem trên trang chủ zBe.\n3) Sửa triệt để lỗi không phát tiếng Thuyết minh AI trên zBe Mobile (reclaim session generation epoch sau khi thoát toàn màn hình + đồng bộ nguồn phụ đề đang bật).\n4) Sửa lỗi lặp phụ đề 2 lần & nhảy vị trí cao ở màn hình đứng (ẩn sub native Video/libmpv, LayoutBuilder theo khung 16:9 và khử trùng lặp cue); tách riêng Phụ đề AI (Live ASR) với Phụ đề YouTube/tệp ngoài (.srt/.vtt/.ass) kèm chỉnh cỡ chữ, kiểu viền, màu chữ, màu viền, nền & vị trí ngay trên zBe.\n5) Hợp nhất Dán link từ Coi Fim sang zBe: bỏ icon logo zBe góc trái trên để bổ sung nút Dán link đa nền tảng (YouTube, TikTok, Facebook, Vimeo, web phim...) vào thẳng ô tìm kiếm + nút Mở video/nhạc từ bộ nhớ điện thoại.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-release.apk",
-  "sha256": "c37f9ab973298a8b2c87f51796fa5e995902002e9e7d221b3050f22f7193a5c1",
+  "versionCode": 10770,
+  "versionName": "0.1.77",
+  "buildTimestamp": "2026-11-26T18:04:15Z",
+  "releaseNotes": "Tối ưu đồng bộ trình phát zBe & Sửa 8 nhóm lỗi DEBUG v0.1.77 (Build 10770):\n1) Hợp nhất trình phát zBe & Media Link thành một ZBeWatchPage duy nhất: chỉ chuyển đổi bố cục ngay tại chỗ giữa chế độ dọc và toàn màn hình ngang, không còn tách 2 trình phát khác nhau trên điện thoại.\n2) Đồng bộ Thuyết minh AI hoạt động mượt ở cả chế độ màn hình đứng lẫn toàn màn hình ngang; mặc định luôn tự chọn chất lượng cao nhất khả dụng (tối đa 4K/2160p thay vì giới hạn 1080p) và sửa triệt để lỗi đứng hình khi đổi chất lượng lúc xoay ngang (giữ nguyên mốc thời gian đang phát & track âm thanh ngoài).\n3) Bật Phụ đề (CC) mặc định ưu tiên hiển thị Phụ đề dịch AI tiếng Việt, tách bạch rõ ràng với Phụ đề gốc YouTube / tệp ngoài trong bảng cài đặt.\n4) Nâng tốc độ phản hồi Thuyết minh AI: bổ sung circuit breaker tự chuyển Google TTS khi Edge TTS nghẽn, gom probe khởi tạo và tinh chỉnh gộp câu giúp bỏ khoảng trễ 3–5 giây đầu đoạn, đồng bộ bám sát phụ đề tự nhiên.\n5) Sửa lỗi nút Tạm dừng (Pause) trên thanh thông báo Android & phím media không dừng phát: tách PendingIntent riêng biệt, xử lý nút media trên MediaSession và dùng callback stack theo từng màn hình.\n6) Bổ sung chú giải rõ ràng cho biểu tượng Tai nghe (Chỉ âm thanh - tắt hình, tiết kiệm pin/4G).\n7) Cải tiến khung Bình luận chế độ đứng: neo cố định sát cạnh dưới khung video 16:9, không làm mờ video và khóa vùng cuộn riêng biệt để không bị kéo đè lên video.\n8) Nâng cấp bộ bóc tách đa nền tảng cho Vimeo, Dailymotion và các trang chia sẻ video / web phim trực tuyến để mở thẳng trong trình phát zFim không quảng cáo kèm Phụ đề & Thuyết minh AI.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-release.apk",
+  "sha256": "1290167da487fec007254a73b29aa23a482f050ae3bf40de4c1844544aca210d",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10760,
-      "versionName": "0.1.76",
+      "versionCode": 10770,
+      "versionName": "0.1.77",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "c37f9ab973298a8b2c87f51796fa5e995902002e9e7d221b3050f22f7193a5c1",
-  "sha256_armeabi-v7a": "6877b2cb228c6dffff4d5d54704327936933cb4ebafd5d7758774d3442e019d9",
-  "sha256_arm64": "2f8f56e26c6664d6fd019b15cbfbebd49bb3de409c643f11059e243943357c3c",
-  "sha256_x86_64": "cc355bd1103ba409fc8245d0c956bc7a39fe89148175ce208e1c368f4c3a0f92",
+  "sha256_universal": "1290167da487fec007254a73b29aa23a482f050ae3bf40de4c1844544aca210d",
+  "sha256_armeabi-v7a": "6748e9adbe1e5b082453d9fe05cb376aca3bed1d22eb354d49cfdcdde33f8574",
+  "sha256_arm64": "08a45d1c6e0ec67f0543e8ad15531d9d22111b0e2958549f32a05909da045700",
+  "sha256_x86_64": "66b0cb1714991580c16b0c99da9841d9b62389bc97b3b1049f17b80d756ef656",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
