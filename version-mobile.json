@@ -1,14 +1,14 @@
 {
-  "versionCode": 10740,
-  "versionName": "0.1.74",
-  "buildTimestamp": "2026-11-26T12:20:28Z",
-  "releaseNotes": "Sửa lỗi kết nối zBe (HTTP 400) & Triển khai Giai đoạn 3 v0.1.74 (Build 10740):\n1) Khắc phục triệt để lỗi InnerTube browse HTTP 400: chuyển FEtrending sang FEhype_leaderboard (YouTube Charts), dùng client TVHTML5 + bộ phân tích tileRenderer cho chủ đề Âm nhạc/Trò chơi/Tin tức/Thể thao/Trực tiếp, hợp nhất song song trang Khám phá ẩn danh và chuẩn hóa host www.youtube.com.\n2) Thu gọn / Mở rộng Mini-Player ngay trong Watch Page: vuốt xuống trình phát hoặc bấm nút thu nhỏ để thu gọn thành Mini-Player gắn nhãn zBe (InAppPipManager), chạm mở rộng lại lập tức không cần tải lại luồng.\n3) Equalizer 5 băng tần (60 Hz – 14 kHz) & Volume Boost lên tới 200% qua bộ lọc âm thanh MPV lavfi, đồng bộ khi chuyển toàn màn hình PlayerScreen.\n4) Lời bài hát đồng bộ (LRCLIB): tự làm sạch tiêu đề YouTube/MV Việt, đánh dấu câu hát theo thời gian thực và chạm tua ngay tới đoạn lời.\n5) Tải về ngoại tuyến (Video MP4 / Chỉ âm thanh M4A) kèm thanh tiến độ thực tế và tab 'Đã tải về' trong Thư viện zBe (Lịch sử xem | Xem sau | Đã tải về) cho phép phát offline hoàn toàn.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.74/app-release.apk",
-  "sha256": "67daac2b4b164fa4b590d123ae7b4c637d833ed2337c9f3ad62ea0772b0566a0",
+  "versionCode": 10750,
+  "versionName": "0.1.75",
+  "buildTimestamp": "2026-11-26T14:14:23Z",
+  "releaseNotes": "Sửa 5 lỗi DEBUG zBe theo chuẩn MeeTube v0.1.75 (Build 10750):\n1) Bảng thiết lập trình phát zBe kiểu kính mờ MeeTube (nút bánh răng ⚙️): Chất lượng, Phụ đề, Bản chép lời/Lời bài hát, Tốc độ phát, Bộ chỉnh âm EQ, Âm lượng trình phát, Tự động phát tiếp theo, Hẹn giờ tắt, Hình trong hình (PiP), Chế độ ánh sáng viền (Ambient Mode) tỏa sáng dịu quanh trình phát, và Thêm.\n2) Khắc phục triệt để lỗi đen màn hình khi nhấn Toàn màn hình (Fullscreen): chuyển giao trực tiếp phiên Player + VideoController (zero-rebuffer) vào PlayerScreen và tự khôi phục đúng hướng màn hình dọc khi quay lại.\n3) Sửa triệt để Phụ đề AI & Thuyết minh AI trên zBe: chuyển lấy phụ đề qua client IOS/ANDROID_VR + giải mã XML timedtext/transcript YouTube, kết nối đồng bộ giọng đọc/LLM vào DubbingController, và bổ sung thanh điều khiển nhanh Sub/Dub giống trình xem dán link (Phụ đề, Thuyết minh, - / Đồng bộ / +, Thiết lập Sub/Dub 2 tab).\n4) Nâng cấp thumbnail HD 720p (hq720.jpg -> sddefault fallback) siêu nét trên trang chủ zBe và bổ sung tự động phát xem trước tắt tiếng video giữa màn hình kèm nút Mute/CC & đếm ngược thời lượng.\n5) Trang chủ zBe tự động thu gọn thanh tiêu đề và thanh dock khi vuốt lên để thoáng màn hình, giữ lại nút kính lúp tìm kiếm tròn nổi ở góc dưới phải (bấm mở tìm kiếm, vuốt xuống hiện lại dock).",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-release.apk",
+  "sha256": "b2e7edf56ea6714a5da336db1af7e4dffd9cd5fdbaf3efdb33ea2121f8e4cdd7",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10740,
-      "versionName": "0.1.74",
+      "versionCode": 10750,
+      "versionName": "0.1.75",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.74/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.74/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.74/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.74/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "67daac2b4b164fa4b590d123ae7b4c637d833ed2337c9f3ad62ea0772b0566a0",
-  "sha256_armeabi-v7a": "02daa96b7eb70efcf0424cb4cf306d4c96a144e673962feec3d38d69eb31b684",
-  "sha256_arm64": "a3ce492c0d0a03e9ae0b61e6ce0837aa3bdefa4e4a973c30eb004f184e600e05",
-  "sha256_x86_64": "15c81c890d42a8ab8351d927de7c0745df65fc253ff6f0e7c0ab368753e45a8d",
+  "sha256_universal": "b2e7edf56ea6714a5da336db1af7e4dffd9cd5fdbaf3efdb33ea2121f8e4cdd7",
+  "sha256_armeabi-v7a": "0634b5f18ba3a03f484c70a96b9d582302e8ada67e0b706668f37f5e318db152",
+  "sha256_arm64": "03b36be512836dc3b41a079d835dbd2105a7ba849827d4dccde4c9c7688ca74e",
+  "sha256_x86_64": "b046b6be8f759d18e046fc7113a7981a57af4f54b47f12ea50829a086622047a",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
