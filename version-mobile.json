@@ -1,14 +1,14 @@
 {
-  "versionCode": 10650,
-  "versionName": "0.1.65",
-  "buildTimestamp": "2026-11-26T03:19:46Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.65 (Build 10650) — Khôi phục đọc liền mạch trọn câu không ngắt quãng & Sửa triệt để lỗi sót dịch tiếng Tây Ban Nha / ngôn ngữ châu Âu:\n1) Khôi phục đọc liền mạch trọn câu, hết đoạn: Điều chỉnh Silero VAD tránh cắt vội khi lấy hơi (softPause 220–240ms, softMax 5.2–7.5s, gắn cờ forcedSplit khi cắt giữa mạch thoại), bỏ cơ chế nhả vội câu mở đầu khi chưa hết câu, tự tách mượt phần câu đã kết thúc ở dấu chấm giữa đoạn nối và gom tiếp phần đuôi sang câu kế, kết hợp hậu kiểm gom đoạn trên DubbingController.\n2) Sửa lỗi dịch tiếng Tây Ban Nha & đa ngữ (câu dịch được, câu vẫn giữ nguyên bản gốc): Chuẩn hóa ISO 639-1 đầy đủ trong CloudAsrEngine (spanish -> es, german -> de, portuguese -> pt), tránh nhận nhầm dấu sắc/huyền tiếng Tây Ban Nha thành tiếng Việt, từ chối và tự động dịch lại bằng sl=auto (cả ở FreeWeb lẫn LiveAsrCoordinator) khi bộ dịch chính trả về nguyên văn tiếng nước ngoài, bổ sung Tiếng Tây Ban Nha/Pháp/Đức/Bồ Đào Nha/Nga/Thái vào danh sách ngôn ngữ nguồn ASR.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-release.apk",
-  "sha256": "28105bc111827f2b37fff773c88e56af3c9ca4e72ad0583ecfc25cc7365f6aac",
+  "versionCode": 10660,
+  "versionName": "0.1.66",
+  "buildTimestamp": "2026-11-26T03:54:39Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.66 (Build 10660) — Đồng bộ tốc độ đọc khớp thoại gốc & Dịch xưng hô thuần Việt theo ngữ cảnh tiêu đề video:\n1) Giữ nhịp thuyết minh tự nhiên, không chạy trước thoại: Bù trừ lại 240ms đệm đầu câu trong SileroVadEngine, dùng Pre-start Sync Gate + đo thời lượng WAV/MP3 thực tế, tách riêng tốc độ tự nhiên vs chế độ đuổi mượt và chèn dấu phẩy nghỉ nhịp khi nối câu.\n2) Tự trích tiêu đề/mô tả đa nền tảng (YouTube, Facebook, TikTok, Web) & phân loại thể loại video (Review/Công nghệ, Phim AI/Phim ngắn, Cổ trang/Tiên hiệp, Tình cảm, Livestream...) để dịch đúng xưng hô thuần Việt (anh/em, cô/cậu, mày/tao, ta/ngươi) thay vì lặp lại 'tôi - bạn'.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.66/app-release.apk",
+  "sha256": "8ae1191c466b6711fb43f75120794d15a94aaa8b972e38c5148cc9597063d5cd",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10650,
-      "versionName": "0.1.65",
+      "versionCode": 10660,
+      "versionName": "0.1.66",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.65/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.66/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.66/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.66/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.66/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "28105bc111827f2b37fff773c88e56af3c9ca4e72ad0583ecfc25cc7365f6aac",
-  "sha256_armeabi-v7a": "276438e07dc75ebceeb0d1d831411ef0457c154e1c5272a00617afda21c388f6",
-  "sha256_arm64": "c31897e5c1bb12f02f040b212d8b9a4f6bb871599641cdef599e6fa0d7dd455e",
-  "sha256_x86_64": "847e369a09d11f5222b6f8212104a5dca56d49a17256f2511b8893bcef49843c",
+  "sha256_universal": "8ae1191c466b6711fb43f75120794d15a94aaa8b972e38c5148cc9597063d5cd",
+  "sha256_armeabi-v7a": "e55a8fe969497bb79074df1e7d10145a9bc0e34631509418b8da501a727643d6",
+  "sha256_arm64": "5005fd8fe345d593fd1c76ef0d406042c4b58c612b4423cdf24719d6b3b8e2e6",
+  "sha256_x86_64": "c667b8245f1382cd94214fd28f6686bb6f6d83b0681c366b41fe7eb0200b1cb2",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
