@@ -1,19 +1,19 @@
 {
-  "versionCode": 10014,
-  "versionName": "1.2.2",
-  "buildTimestamp": "2026-11-25T11:14:00+07:00",
-  "releaseNotes": "zFim TV Native v1.2.2 (Sửa triệt để nguồn YanHH3D + Bộ Quản lý Kho nguồn đầy đủ):\n- Sửa lỗi nguồn YanHH3D (yanhh3d): tự động theo chuỗi chuyển hướng đa chặng (bit.ly -> yanhh3d.baby -> yanhh3d.now), bổ sung retry Clean Cloudflare IP, cập nhật kho zFim01 v1.6.2 (yanhh3d v1.0.7) để tải đủ 17 phân loại phim.\n- Tích hợp ZfimGlideModule (OkHttp DoH 1.1.1.1/8.8.8.8 + Clean Cloudflare IP + TLSv1.2) kèm GlideUrl User-Agent/Referer để hiển thị đầy đủ 100% poster, backdrop & logo phim.\n- Bổ sung Bộ Quản lý Kho nguồn & Addon chuyên nghiệp (giống zFim Flutter): tách tab Nguồn Đã Cài & Kho Nguồn, bộ lọc Phim/IPTV/Stremio, bật/tắt nguồn, làm mới domain động, đồng bộ/xóa từng kho, cài nhanh 1 chạm zFim01, dán JSON trực tiếp & Reset Clean Platform.",
+  "versionCode": 10015,
+  "versionName": "1.2.3",
+  "buildTimestamp": "2026-11-27T00:15:00+07:00",
+  "releaseNotes": "zFim TV Native v1.2.3 (Khắc phục triệt để chặn cài đặt Google Play Protect):\n- Loại bỏ hoàn toàn Accessibility Service và các quyền nhạy cảm (WRITE_SECURE_SETTINGS, DUMP, KILL_BACKGROUND_PROCESSES, REQUEST_DELETE_PACKAGES) gây hiểu nhầm mã độc/gian lận tài chính trên Google TV / MiBox.\n- Tối ưu chế độ Launcher TV tiêu chuẩn qua Android LEANBACK_HOME / CATEGORY_HOME chính thức, dọn dẹp RAM an toàn trực tiếp qua bộ nhớ đệm ứng dụng.\n- Cài đặt 1 chạm mượt mà trên mọi thiết bị Xiaomi MiBox S, MiTV4, Chromecast Google TV mà không bị Play Protect chặn.",
   "downloadUrl": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native",
-  "sha256": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
+  "sha256": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078",
   "downloadUrls": {
     "universal": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-universal",
     "armeabi-v7a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-v7a",
     "arm64-v8a": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-arm64",
     "x86_64": "https://zfim-edge-telemetry.vietph-eng.workers.dev/download/tv-native-x86_64"
   },
-  "sha256_universal": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
-  "sha256_armeabi-v7a": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
-  "sha256_arm64": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
-  "sha256_arm64-v8a": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89",
-  "sha256_x86_64": "287abed07821e23d4e1d53ec871e2bb417c710fb996958706970b2df55933c89"
+  "sha256_universal": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078",
+  "sha256_armeabi-v7a": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078",
+  "sha256_arm64": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078",
+  "sha256_arm64-v8a": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078",
+  "sha256_x86_64": "16632c31db239d327c3eb0a9d23f20ff46060dd16f1978b447b99e09e0f72078"
 }
