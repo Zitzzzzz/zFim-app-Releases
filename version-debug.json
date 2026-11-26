@@ -1,14 +1,14 @@
 {
-  "versionCode": 10750,
-  "versionName": "0.1.75",
-  "buildTimestamp": "2026-11-26T14:14:23Z",
-  "releaseNotes": "Sửa 5 lỗi DEBUG zBe theo chuẩn MeeTube v0.1.75 (Build 10750):\n1) Bảng thiết lập trình phát zBe kiểu kính mờ MeeTube (nút bánh răng ⚙️): Chất lượng, Phụ đề, Bản chép lời/Lời bài hát, Tốc độ phát, Bộ chỉnh âm EQ, Âm lượng trình phát, Tự động phát tiếp theo, Hẹn giờ tắt, Hình trong hình (PiP), Chế độ ánh sáng viền (Ambient Mode) tỏa sáng dịu quanh trình phát, và Thêm.\n2) Khắc phục triệt để lỗi đen màn hình khi nhấn Toàn màn hình (Fullscreen): chuyển giao trực tiếp phiên Player + VideoController (zero-rebuffer) vào PlayerScreen và tự khôi phục đúng hướng màn hình dọc khi quay lại.\n3) Sửa triệt để Phụ đề AI & Thuyết minh AI trên zBe: chuyển lấy phụ đề qua client IOS/ANDROID_VR + giải mã XML timedtext/transcript YouTube, kết nối đồng bộ giọng đọc/LLM vào DubbingController, và bổ sung thanh điều khiển nhanh Sub/Dub giống trình xem dán link (Phụ đề, Thuyết minh, - / Đồng bộ / +, Thiết lập Sub/Dub 2 tab).\n4) Nâng cấp thumbnail HD 720p (hq720.jpg -> sddefault fallback) siêu nét trên trang chủ zBe và bổ sung tự động phát xem trước tắt tiếng video giữa màn hình kèm nút Mute/CC & đếm ngược thời lượng.\n5) Trang chủ zBe tự động thu gọn thanh tiêu đề và thanh dock khi vuốt lên để thoáng màn hình, giữ lại nút kính lúp tìm kiếm tròn nổi ở góc dưới phải (bấm mở tìm kiếm, vuốt xuống hiện lại dock).",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk",
-  "sha256": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2",
+  "versionCode": 10760,
+  "versionName": "0.1.76",
+  "buildTimestamp": "2026-11-26T15:54:51Z",
+  "releaseNotes": "Nâng cấp toàn diện zBe & Sửa 5 nhóm lỗi DEBUG v0.1.76 (Build 10760):\n1) Trình phát zBe gọn gàng: xóa thanh & nút Phụ đề/Thuyết minh trùng lặp bên dưới video, chỉ giữ cụm điều khiển trong overlay; bỏ viền bao quanh nút -/+ tốc độ trên cả zBe và toàn màn hình.\n2) Khắc phục triệt để lỗi tải bình luận YouTube (tách token bình luận khỏi danh sách liên quan, tự động nạp bình luận đầu & phân trang Tải thêm) và bổ sung Đề xuất video tương tự từ lịch sử xem trên trang chủ zBe.\n3) Sửa triệt để lỗi không phát tiếng Thuyết minh AI trên zBe Mobile (reclaim session generation epoch sau khi thoát toàn màn hình + đồng bộ nguồn phụ đề đang bật).\n4) Sửa lỗi lặp phụ đề 2 lần & nhảy vị trí cao ở màn hình đứng (ẩn sub native Video/libmpv, LayoutBuilder theo khung 16:9 và khử trùng lặp cue); tách riêng Phụ đề AI (Live ASR) với Phụ đề YouTube/tệp ngoài (.srt/.vtt/.ass) kèm chỉnh cỡ chữ, kiểu viền, màu chữ, màu viền, nền & vị trí ngay trên zBe.\n5) Hợp nhất Dán link từ Coi Fim sang zBe: bỏ icon logo zBe góc trái trên để bổ sung nút Dán link đa nền tảng (YouTube, TikTok, Facebook, Vimeo, web phim...) vào thẳng ô tìm kiếm + nút Mở video/nhạc từ bộ nhớ điện thoại.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk",
+  "sha256": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10750,
-      "versionName": "0.1.75",
+      "versionCode": 10760,
+      "versionName": "0.1.76",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -44,17 +44,17 @@
     "ios-simulator": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS-Simulator.ipa",
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip",
-    "debug": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.75/app-debug.apk"
+    "debug": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.76/app-debug.apk"
   },
-  "sha256_universal": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2",
-  "sha256_armeabi-v7a": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2",
-  "sha256_arm64": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2",
-  "sha256_x86_64": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2",
+  "sha256_universal": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223",
+  "sha256_armeabi-v7a": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223",
+  "sha256_arm64": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223",
+  "sha256_x86_64": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
   "sha256_ios_simulator": "8177d23ea25c9dceac8adb709db864d4a9f6c91c8af67925925e0978a03501cc",
   "sha256_windows_setup": "0a75f3e130bcd656fef8cded5fe1934bedde4d74158f1a3a978b0d7e3b527b17",
   "sha256_windows_portable": "fd30da6c7cd7acb1e04bd4810657183158319fc078fbebff83149ee115c23594",
-  "sha256_debug": "e2d1d52fe31e28b6fa40aabba57be34a041bf14a7b52566e64bd18666caa0ac2"
+  "sha256_debug": "2a09085953d2b15f01d638f3cb80973db18d77fa3bd5a397d6e9bcae54463223"
 }
