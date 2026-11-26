@@ -1,14 +1,14 @@
 {
-  "versionCode": 10720,
-  "versionName": "0.1.72",
-  "buildTimestamp": "2026-11-26T09:34:13Z",
-  "releaseNotes": "Sửa lỗi & tối ưu trình phát AI Link v0.1.72 (Build 10720):\n1) Hiện ảnh thumbnail video dưới popup 'Đang xử lý nguồn' kèm nút 'Phát ngay' từ đầu, xóa màn hình đen trước khi phát; song song hóa giải mã YouTube (metadata + oEmbed + manifest + ASR) rút ngắn rõ rệt thời gian khởi tạo.\n2) Bấm 'Đồng bộ' không còn bị đen màn hình: giữ nguyên video đang phát và hiển thị icon đồng bộ xoay ngay trên nền video.\n3) Sửa lỗi mất thuyết minh đoạn mở đầu khi mở link Facebook do thời gian tách link ăn vào prebuffer và mốc cắt quá ngắn ở giây đầu.\n4) Bám sát tốc độ phụ đề cho video YouTube review nói nhanh liên tục (dải tốc độ 0.8x–1.8x linh hoạt theo độ dài hiển thị phụ đề, giữ nguyên WSOLA mượt, không đè tiếng hay bụp tiếng).\n5) Bổ sung nút ép màn hình đứng/ngang ở góc phải trên và hai nút -/+ cạnh nút Đồng bộ để chỉnh nhanh tốc độ thuyết minh thủ công.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.72/app-release.apk",
-  "sha256": "743b2d45f2e2f62b7d60ce1cc7684648730909576da1ac7326c88618a2aba102",
+  "versionCode": 10730,
+  "versionName": "0.1.73",
+  "buildTimestamp": "2026-11-26T10:35:18Z",
+  "releaseNotes": "Ra mắt tab zBe (YouTube gọn nhẹ, không quảng cáo) & tùy chỉnh Dock v0.1.73 (Build 10730):\n1) Tích hợp tab zBe mới với kiến trúc InnerTube sạch, không quảng cáo, ẩn Shorts mặc định, tìm kiếm kèm bộ lọc, duyệt kênh, theo dõi & lịch sử lưu cục bộ.\n2) Giao diện Watch Page kiểu YouTube/MeeTube (trình phát 16:9 trực tiếp, chuyển toàn màn hình mượt sang PlayerScreen, Chapters, biểu đồ Most Replayed, Storyboard tua xem trước, bình luận, video liên quan).\n3) Hỗ trợ SponsorBlock tự tua đoạn tài trợ (kèm nút Hoàn tác), Return YouTube Dislike (RYD), chống giật tít DeArrow và chế độ Chỉ âm thanh / phát nền tắt màn hình.\n4) Cộng hưởng hệ sinh thái AI zFim 2 tầng: tự lấy & dịch phụ đề YouTube sang song ngữ + đọc thuyết minh AI, tự động fallback Live ASR khi video không có phụ đề.\n5) Bổ sung thiết lập tùy chỉnh bố cục thanh điều hướng (sắp xếp thứ tự, ẩn/hiện tab cho cả Mobile/Desktop và Android TV, khóa luôn hiện Kệ Fim).",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.73/app-release.apk",
+  "sha256": "84042931e89bf0cbb5ed70a77020f4f76bf747e2f17d4d5ad2a3f9e541d35980",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10720,
-      "versionName": "0.1.72",
+      "versionCode": 10730,
+      "versionName": "0.1.73",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.72/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.72/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.72/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.72/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.73/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.73/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.73/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.73/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "743b2d45f2e2f62b7d60ce1cc7684648730909576da1ac7326c88618a2aba102",
-  "sha256_armeabi-v7a": "622cbfd18452d33412470ccd5fec8bcd24b1792fa82650e8b41007d97ee47103",
-  "sha256_arm64": "a659aa9ec0e4fd84949f40b513459223e52c84807d6f6c51d50da178345d2211",
-  "sha256_x86_64": "0eb4a249aa7807ee28c939ea7d33ac248394c36ae0773d4d4ed971c27fb380e8",
+  "sha256_universal": "84042931e89bf0cbb5ed70a77020f4f76bf747e2f17d4d5ad2a3f9e541d35980",
+  "sha256_armeabi-v7a": "fed274fc370b8f05d2e252eb7cded34562628ea4c4bd845e0c3332f735e82d16",
+  "sha256_arm64": "9659a4aa5ab2c3ec690e39104d963551cda010e3221495637529c9f338fc0e34",
+  "sha256_x86_64": "0c676c9abb5fc0ad99c7f8c4a35d5de7b63d6ddb1bccb4c49c5c5357de863b05",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
