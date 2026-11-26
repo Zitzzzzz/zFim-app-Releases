@@ -1,14 +1,14 @@
 {
-  "versionCode": 10690,
-  "versionName": "0.1.69",
-  "buildTimestamp": "2026-11-26T06:06:26Z",
-  "releaseNotes": "Sửa lỗi đồng bộ khởi đầu & mất tiếng thuyết minh trên YouTube / Facebook v0.1.69 (Build 10690):\n1) Sửa triệt để lỗi YouTube chỉ có phụ đề nhưng mất tiếng thuyết minh sau khi xem video khác (Facebook): reset activeSessionGen khi giải phóng DubbingAudioPlayer, cấp generation epoch tăng dần cho mỗi phiên Player, và ngăn bộ quét phụ đề rỗng ghi đè luồng Live ASR.\n2) Sửa lỗi Facebook chậm thuyết minh 30s đầu video & khi tua rồi đọc đuổi siêu nhanh: liên kết prebuffer giữa LiveAsrCoordinator và DubbingController để không làm mất âm thanh đã tổng hợp khi tạm dừng đệm, reset đồng hồ decodedPosMs/exoPosMs khi tua, và kích hoạt phát câu thoại ngay thời khắc nhả play.\n3) Hủy tức thì tác vụ Edge TTS cũ đang kẹt trong hàng đợi khi tua (TtsCancelToken listener) và không xóa bộ nhớ đệm giọng đọc khi dùng phụ đề AI ASR.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-release.apk",
-  "sha256": "b1e436b30659099d7a3c045c83ac45638d995d87911bc0e3a8853085fa0e0221",
+  "versionCode": 10700,
+  "versionName": "0.1.70",
+  "buildTimestamp": "2026-11-26T06:42:19Z",
+  "releaseNotes": "Sửa lỗi trễ 15s khi tua & nâng cấp phân loại ngữ cảnh YouTube/Facebook v0.1.70 (Build 10700):\n1) Xóa độ trễ 15s + đọc đuổi dồn sau khi tua: chặn tick vị trí cũ trước khi seek ổn định, giữ _audioCache để tua lại phát 0ms, hủy ngay cả handshake WebSocket Edge TTS đang treo khi tua, và rút ngắn ngưỡng bỏ câu quá hạn.\n2) Phân tách thông minh Review YouTube vs Phim ngắn AI / Chiến đấu trên Facebook: video đánh giá sản phẩm trên YouTube giữ chuẩn xưng hô lịch sự 'tôi - bạn / các bạn' (tuyệt đối không xưng tao-mày); phim hành động / đối kháng AI tự học ngữ cảnh để chuyển sang 'ta - ngươi' hoặc 'tao - mày' / 'anh - em' đúng vai.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.70/app-release.apk",
+  "sha256": "a7566de84b9f9421330e4d19f75d7349cff603f40f0a147d6ddf2eaafbea585e",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10690,
-      "versionName": "0.1.69",
+      "versionCode": 10700,
+      "versionName": "0.1.70",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.69/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.70/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.70/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.70/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.70/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "b1e436b30659099d7a3c045c83ac45638d995d87911bc0e3a8853085fa0e0221",
-  "sha256_armeabi-v7a": "33de148ad048948eb8881137efb9169efd15024bed78cac420dcc5a9bc3b7c49",
-  "sha256_arm64": "cd8a41176d1ce41366944be425758bc250c1da975def765bf9bb51fdac262e23",
-  "sha256_x86_64": "06e12d3bdc74373a025067ec8a71de351525110acb4b538bd480acde217d7bce",
+  "sha256_universal": "a7566de84b9f9421330e4d19f75d7349cff603f40f0a147d6ddf2eaafbea585e",
+  "sha256_armeabi-v7a": "dad0300af22145fd0a8decc8787f55be5c9ce2180a326fb477f37f68570ec200",
+  "sha256_arm64": "2e1f0a697f4f5828ae1dd00874aee075ae11106d61afb3933e4dada7d9094204",
+  "sha256_x86_64": "5ce486699dfa6e737199051ecd4ac9ab4b56d1a5958d7a22649ab6c4e0af3085",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
