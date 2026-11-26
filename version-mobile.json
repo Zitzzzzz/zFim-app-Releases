@@ -1,14 +1,14 @@
 {
-  "versionCode": 10630,
-  "versionName": "0.1.63",
-  "buildTimestamp": "2026-11-26T02:12:12Z",
-  "releaseNotes": "Bản OTA Test Điện thoại v0.1.63 (Build 10630) — Nâng cấp Thuyết minh AI mượt không bụp/tạch, Đọc trọn câu thông minh, Nghe tắt màn hình & Khử ảo giác đoạn mở đầu:\n1) Khử tiếng bụp/tạch/giựt gắt khi thuyết minh liên tiếp: Viết lại DubbingAudioPlayer với AudioTrack 48kHz PCM16 bền vững, WSOLA giữ cao độ bằng Kotlin thuần (bỏ playbackParams), khử DC-offset, soft peak limiter, fade-in/out raised-cosine (18ms/22ms) và giữ ấm 450ms giữa các câu liên tiếp.\n2) Đọc trọn vẹn câu thoại dài & hàng đợi nối tiếp: Chuyển hàng đợi phát sang FIFO không chen ngang (interrupt=false), chờ trọn câu (tới 120s), tách câu VieNeu TTS theo dấu câu tự nhiên và giữ giảm âm lượng phim liền mạch xuyên suốt chuỗi thoại.\n3) Chế độ Đọc trọn câu thông minh (Smart Sentence & Paragraph Flow): Gom các mảnh phụ đề/ASR chưa hết câu cho người nói liên tục (reviewer YouTube), dịch theo mạch văn nói tự nhiên và đọc trọn vẹn không giật giữa câu.\n4) Nghe tắt màn hình (Dán Link & Xem Phim): Tích hợp Foreground Service MediaSession + điều khiển màn hình khóa/thông báo (-10s / Phát-Tạm dừng / +10s / Dừng), WakeLock/WifiLock giữ sống ASR & thuyết minh AI khi khóa màn hình, kèm nút bật/tắt nhanh trong Player và thẻ Dán Link.\n5) Sửa lỗi đoạn mở đầu 0–60s đọc lung tung chưa có thoại: Nâng cấp Silero VAD (dual-threshold hysteresis 0.50/0.34, xác nhận 96ms, tách thung lũng RMS thấp khi nói liên tục), bỏ 150ms khung priming sau khi mở/tua, lọc nhãn <|NOSPEECH|>/CTC yếu trên SenseVoice và lọc no_speech_prob/hallucination trên Whisper/Gemini.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.63/app-release.apk",
-  "sha256": "0498fafc422abdbabbd467ecf07e790fbf0bdf7fc8f30d1b8c8e158ee6e1683f",
+  "versionCode": 10640,
+  "versionName": "0.1.64",
+  "buildTimestamp": "2026-11-26T02:45:23Z",
+  "releaseNotes": "Bản OTA Test Điện thoại v0.1.64 (Build 10640) — Xử lý mượt giai đoạn mở đầu video, Học tốc độ thoại theo thể loại & Sửa triệt để Nghe tắt màn hình + Thông báo Media:\n1) Giai đoạn mở đầu 0–60s mượt ngay từ giây đầu (hết im lặng 30s rồi xả dồn dập): Nâng tốc độ warm-up look-ahead lên 2.8x (trước SonicAudioProcessor nên giữ nguyên âm sắc 1.0x), thêm Intro Bootstrap VAD trong 25s đầu (tách câu 3.8–6.8s thay vì kẹt 12.5s), đồng bộ cờ vadInSpeech + dubbingBufferedAhead khi đang pre-buffer 15–20s và cơ chế bỏ câu quá hạn nếu đã có câu mới đúng nhịp.\n2) Học hỏi thông minh theo thể loại video (Review YouTube, Short/TikTok, Livestream, Phim): Tự nhận diện VideoSpeechProfile, đo nhịp thoại của người review/livestreamer qua các câu đầu để hiệu chỉnh tốc độ nền, giới hạn biên độ trượt giữa các câu chống giật tăng/giảm đột ngột và lưu cấu hình tốc độ riêng theo từng thể loại.\n3) Sửa triệt để Nghe tắt màn hình & Thanh điều khiển Media trên thông báo: Tắt pauseUponEnteringBackgroundMode mặc định của media_kit Video, ngắt vid=no khi tắt màn để không nghẽn GPU surface và bật lại vid=auto khi mở màn; cấp quyền runtime POST_NOTIFICATIONS trên Android 13–16, xin AudioFocus chuẩn Media, gắn MediaStyle icon + điều khiển Notification cho cả MediaKit và NativePlayerActivity.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-release.apk",
+  "sha256": "b1095d2b6f8145dbb2af882ed738d64fa0cdd80510fe2d650c805f44c6a76a1e",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10630,
-      "versionName": "0.1.63",
+      "versionCode": 10640,
+      "versionName": "0.1.64",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.63/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.63/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.63/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.63/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.64/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "0498fafc422abdbabbd467ecf07e790fbf0bdf7fc8f30d1b8c8e158ee6e1683f",
-  "sha256_armeabi-v7a": "96b7e17bc7639ef6d5b2a36a208135b72745df25161e304af4264dc68a433d3b",
-  "sha256_arm64": "720a4ab9db76068e188ff6484ce64253bf9a8a387f8586f0b1e149bc3058978c",
-  "sha256_x86_64": "f0041867321e425e70e1754c5f9b051311d8f1bfd82de742741765db254d9f1f",
+  "sha256_universal": "b1095d2b6f8145dbb2af882ed738d64fa0cdd80510fe2d650c805f44c6a76a1e",
+  "sha256_armeabi-v7a": "768d0233766c24886ccd51064d15734ccd73ea72ddcb8123ec6a1d49e9ff9dc6",
+  "sha256_arm64": "111ebc10752b98dc81c6641b2224880b0135c7ef796774b2e1fd98ae47722c6e",
+  "sha256_x86_64": "3fae69c979f4869c9dc3108e34da454be560d31d905a34bf739a16dbb4be76bf",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
