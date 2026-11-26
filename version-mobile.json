@@ -1,14 +1,14 @@
 {
-  "versionCode": 10780,
-  "versionName": "0.1.78",
-  "buildTimestamp": "2026-11-26T18:42:00Z",
-  "releaseNotes": "Nâng cấp hiệu năng trình phát và độ tương thích luồng xem phim v0.1.78 (Build 10780):\n1) Nâng cấp động cơ bóc tách và phân giải luồng phát video trực tuyến, tăng tốc độ mở phim và khả năng tương thích định dạng HLS đa server.\n2) Tối ưu hóa bộ giải mã luồng đa nền tảng và nhận diện chuẩn xác các phân đoạn phát trực tiếp.\n3) Khắc phục triệt để lỗi hiển thị số phiên bản ứng dụng trong màn hình cài đặt và hệ thống kiểm tra cập nhật (đồng bộ chuẩn xác v0.1.78).\n4) Cải thiện độ ổn định và trải nghiệm điều khiển trong trình phát.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-release.apk",
-  "sha256": "3fab8292b4ff8a6a015af6d6927474ec9220b1211cc9f682769ffaac745d5dac",
+  "versionCode": 10790,
+  "versionName": "0.1.79",
+  "buildTimestamp": "2026-11-26T19:11:51Z",
+  "releaseNotes": "Tối ưu hóa hiệu năng trình phát và tương thích luồng phát trực tuyến v0.1.79 (Build 10790):\n1) Nâng cấp động cơ phân giải luồng video HLS và tối ưu hóa xử lý gói tin media đa máy chủ.\n2) Cải thiện độ ổn định bộ đệm phân đoạn và tăng tốc thời gian phản hồi khung hình đầu tiên.\n3) Chuẩn hóa cơ chế kiểm tra cập nhật hệ thống và đồng bộ số phiên bản OTA.\n4) Tối ưu hóa giao diện trình phát và nâng cao trải nghiệm người dùng.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.79/app-release.apk",
+  "sha256": "fbb8ce3756f3a679dd3aa34da83f24dafac6d5a21e18c0bfccc88d3bd0d27b56",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10780,
-      "versionName": "0.1.78",
+      "versionCode": 10790,
+      "versionName": "0.1.79",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.79/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.79/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.79/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.79/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "3fab8292b4ff8a6a015af6d6927474ec9220b1211cc9f682769ffaac745d5dac",
-  "sha256_armeabi-v7a": "b8910d6d22aabaf14bf0e3ba1cc178ebcf38d1109e4df26929916d0fec6c329c",
-  "sha256_arm64": "d87b57451f03c3c4f84860e2b4bb4bc752e90cfc54a595ee34ba0e215cff07ef",
-  "sha256_x86_64": "63f6eb5d5c81560d6c68e918c8e8077848d8d13e3fce222c67a286cf01f5eee1",
+  "sha256_universal": "fbb8ce3756f3a679dd3aa34da83f24dafac6d5a21e18c0bfccc88d3bd0d27b56",
+  "sha256_armeabi-v7a": "316720ff572b9f3ee78f1bfca287880bc1ee76d5aae11ee938fe822339014361",
+  "sha256_arm64": "6f30f352b0e7e4e58c5c429a3babfc81b17be09ce553c61be56d89391186b1ae",
+  "sha256_x86_64": "04ef933580f5c701c01a8bb4f7e50a498a5d93256020a602e0860233e8e67070",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
