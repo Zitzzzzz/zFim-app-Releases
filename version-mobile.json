@@ -1,14 +1,14 @@
 {
-  "versionCode": 10770,
-  "versionName": "0.1.77",
-  "buildTimestamp": "2026-11-26T18:04:15Z",
-  "releaseNotes": "Tối ưu đồng bộ trình phát zBe & Sửa 8 nhóm lỗi DEBUG v0.1.77 (Build 10770):\n1) Hợp nhất trình phát zBe & Media Link thành một ZBeWatchPage duy nhất: chỉ chuyển đổi bố cục ngay tại chỗ giữa chế độ dọc và toàn màn hình ngang, không còn tách 2 trình phát khác nhau trên điện thoại.\n2) Đồng bộ Thuyết minh AI hoạt động mượt ở cả chế độ màn hình đứng lẫn toàn màn hình ngang; mặc định luôn tự chọn chất lượng cao nhất khả dụng (tối đa 4K/2160p thay vì giới hạn 1080p) và sửa triệt để lỗi đứng hình khi đổi chất lượng lúc xoay ngang (giữ nguyên mốc thời gian đang phát & track âm thanh ngoài).\n3) Bật Phụ đề (CC) mặc định ưu tiên hiển thị Phụ đề dịch AI tiếng Việt, tách bạch rõ ràng với Phụ đề gốc YouTube / tệp ngoài trong bảng cài đặt.\n4) Nâng tốc độ phản hồi Thuyết minh AI: bổ sung circuit breaker tự chuyển Google TTS khi Edge TTS nghẽn, gom probe khởi tạo và tinh chỉnh gộp câu giúp bỏ khoảng trễ 3–5 giây đầu đoạn, đồng bộ bám sát phụ đề tự nhiên.\n5) Sửa lỗi nút Tạm dừng (Pause) trên thanh thông báo Android & phím media không dừng phát: tách PendingIntent riêng biệt, xử lý nút media trên MediaSession và dùng callback stack theo từng màn hình.\n6) Bổ sung chú giải rõ ràng cho biểu tượng Tai nghe (Chỉ âm thanh - tắt hình, tiết kiệm pin/4G).\n7) Cải tiến khung Bình luận chế độ đứng: neo cố định sát cạnh dưới khung video 16:9, không làm mờ video và khóa vùng cuộn riêng biệt để không bị kéo đè lên video.\n8) Nâng cấp bộ bóc tách đa nền tảng cho Vimeo, Dailymotion và các trang chia sẻ video / web phim trực tuyến để mở thẳng trong trình phát zFim không quảng cáo kèm Phụ đề & Thuyết minh AI.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-release.apk",
-  "sha256": "1290167da487fec007254a73b29aa23a482f050ae3bf40de4c1844544aca210d",
+  "versionCode": 10780,
+  "versionName": "0.1.78",
+  "buildTimestamp": "2026-11-26T18:42:00Z",
+  "releaseNotes": "Nâng cấp hiệu năng trình phát và độ tương thích luồng xem phim v0.1.78 (Build 10780):\n1) Nâng cấp động cơ bóc tách và phân giải luồng phát video trực tuyến, tăng tốc độ mở phim và khả năng tương thích định dạng HLS đa server.\n2) Tối ưu hóa bộ giải mã luồng đa nền tảng và nhận diện chuẩn xác các phân đoạn phát trực tiếp.\n3) Khắc phục triệt để lỗi hiển thị số phiên bản ứng dụng trong màn hình cài đặt và hệ thống kiểm tra cập nhật (đồng bộ chuẩn xác v0.1.78).\n4) Cải thiện độ ổn định và trải nghiệm điều khiển trong trình phát.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-release.apk",
+  "sha256": "3fab8292b4ff8a6a015af6d6927474ec9220b1211cc9f682769ffaac745d5dac",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10770,
-      "versionName": "0.1.77",
+      "versionCode": 10780,
+      "versionName": "0.1.78",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.77/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.78/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "1290167da487fec007254a73b29aa23a482f050ae3bf40de4c1844544aca210d",
-  "sha256_armeabi-v7a": "6748e9adbe1e5b082453d9fe05cb376aca3bed1d22eb354d49cfdcdde33f8574",
-  "sha256_arm64": "08a45d1c6e0ec67f0543e8ad15531d9d22111b0e2958549f32a05909da045700",
-  "sha256_x86_64": "66b0cb1714991580c16b0c99da9841d9b62389bc97b3b1049f17b80d756ef656",
+  "sha256_universal": "3fab8292b4ff8a6a015af6d6927474ec9220b1211cc9f682769ffaac745d5dac",
+  "sha256_armeabi-v7a": "b8910d6d22aabaf14bf0e3ba1cc178ebcf38d1109e4df26929916d0fec6c329c",
+  "sha256_arm64": "d87b57451f03c3c4f84860e2b4bb4bc752e90cfc54a595ee34ba0e215cff07ef",
+  "sha256_x86_64": "63f6eb5d5c81560d6c68e918c8e8077848d8d13e3fce222c67a286cf01f5eee1",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
