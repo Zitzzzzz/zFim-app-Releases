@@ -1,14 +1,14 @@
 {
-  "versionCode": 10850,
-  "versionName": "0.1.85",
-  "buildTimestamp": "2026-11-27T15:33:19Z",
-  "releaseNotes": "Nâng cấp trải nghiệm & tốc độ zTok v0.1.85 (Build 10850):\n1) Hiệu ứng chuyển video mờ dần (cross-fade mượt với video kế tiếp chờ sẵn bên dưới).\n2) Tìm kiếm dạng lưới thumbnail 2 cột kèm thẻ kênh TikTok, tự động phát video đang ở vị trí trên cùng khi cuộn lên/xuống.\n3) Giao diện trang chủ kênh chuẩn TikTok: đầy đủ Followers / Thích / Video, bio, tích xanh, huy hiệu Đã ghim và tự động cuộn tải hết danh sách video.\n4) Thiết lập sẵn 8 chủ đề yêu thích trên For You & Cài đặt (ca nhạc, khám phá, tin tức, trend, giải trí, điện ảnh, ngôi sao, nhạc trung quốc).\n5) Video tràn full màn hình không còn viền đen trên/dưới (tùy chọn bật/tắt trong Cài đặt zTok).\n6) Tối ưu tốc độ tải video: thêm Media3 SimpleCache 128MB, buffer khởi phát nhanh (350ms) và nạp trước ngầm (prefetch) video kế tiếp.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.85/app-release.apk",
-  "sha256": "0ff566c5f40f71a2b807d640060794372f171ce3bfbfac616c38bb53f11702e3",
+  "versionCode": 10860,
+  "versionName": "0.1.86",
+  "buildTimestamp": "2026-11-27T16:23:19Z",
+  "releaseNotes": "Nâng cấp trải nghiệm mượt 60fps & tính năng mới zTok v0.1.86 (Build 10860):\n1) Đăng nhập TikTok ngay trong ứng dụng (hỗ trợ QR / SĐT / Email) để giảm mạnh Captcha & mở cá nhân hóa For You.\n2) Thanh tìm kiếm bung ngang che gọn dãy tab trên cùng, giải phóng không gian xem.\n3) Dual-Slot ExoPlayer (2 bộ giải mã chờ sẵn): video sau nằm sẵn dưới đáy với frame đầu đã giải mã, chuyển bài mờ dần cực mượt.\n4) Điều khiển thông minh khi tắt màn hình: bấm đúp nút tai nghe, Volume+ (hỗ trợ cả Bluetooth), lắc nhẹ điện thoại -> video tiếp, kèm nút Tiếp trên màn hình khóa.\n5) Mở/đóng bình luận chia đôi màn hình không giật nhờ giữ nguyên Surface video thu gọn mượt mà.\n6) Thanh tiến trình siêu mảnh, sắc nét ngay cạnh dưới video cho phép kéo tua tức thì.\n7) Ưu tiên chất lượng Full HD 1080p sắc nét và tối ưu tràn viền.\n8) Thanh Dock chính nền kính mờ Glassmorphism với viền mỏng sắc nét.\n9) Thuật toán xem thực tế >= 10 giây tự chèn video cùng chủ đề vào vị trí kế tiếp và nạp sẵn bên dưới.\n10) Sửa lỗi giựt màn hình Home sau khi kết thúc logo Intro khi mở app.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-release.apk",
+  "sha256": "0c882455d7740c4eb54b13a3243ce2c4cdc3ef29593cca9fdab5947126546f4d",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10850,
-      "versionName": "0.1.85",
+      "versionCode": 10860,
+      "versionName": "0.1.86",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.85/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.85/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.85/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.85/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "0ff566c5f40f71a2b807d640060794372f171ce3bfbfac616c38bb53f11702e3",
-  "sha256_armeabi-v7a": "68446e181a3d225191032e9e069a0f0b443875961f6214ec964059306552697b",
-  "sha256_arm64": "fb700409d10f4d5b0a7f60a00cba21aba806b372e046ce93356f4a9e947a7979",
-  "sha256_x86_64": "c9c698b0c7dc3d24f41bd5ca55fd8dd7cf01182607b70d519c35e30d192902b5",
+  "sha256_universal": "0c882455d7740c4eb54b13a3243ce2c4cdc3ef29593cca9fdab5947126546f4d",
+  "sha256_armeabi-v7a": "1b61d805414ff655ce083ad0b95e6f778e50893205224642285d80d7c9578698",
+  "sha256_arm64": "698208d0590c3c5f46586b45b5b0f68bc1a89b496d0e4fd4f8c9ac4d4a1bea3b",
+  "sha256_x86_64": "9556b37cb1ce55ce61ad5407c815977951c0b078b722572894a527b6da0809d9",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
