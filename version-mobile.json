@@ -1,14 +1,14 @@
 {
-  "versionCode": 10860,
-  "versionName": "0.1.86",
-  "buildTimestamp": "2026-11-27T16:23:19Z",
-  "releaseNotes": "Nâng cấp trải nghiệm mượt 60fps & tính năng mới zTok v0.1.86 (Build 10860):\n1) Đăng nhập TikTok ngay trong ứng dụng (hỗ trợ QR / SĐT / Email) để giảm mạnh Captcha & mở cá nhân hóa For You.\n2) Thanh tìm kiếm bung ngang che gọn dãy tab trên cùng, giải phóng không gian xem.\n3) Dual-Slot ExoPlayer (2 bộ giải mã chờ sẵn): video sau nằm sẵn dưới đáy với frame đầu đã giải mã, chuyển bài mờ dần cực mượt.\n4) Điều khiển thông minh khi tắt màn hình: bấm đúp nút tai nghe, Volume+ (hỗ trợ cả Bluetooth), lắc nhẹ điện thoại -> video tiếp, kèm nút Tiếp trên màn hình khóa.\n5) Mở/đóng bình luận chia đôi màn hình không giật nhờ giữ nguyên Surface video thu gọn mượt mà.\n6) Thanh tiến trình siêu mảnh, sắc nét ngay cạnh dưới video cho phép kéo tua tức thì.\n7) Ưu tiên chất lượng Full HD 1080p sắc nét và tối ưu tràn viền.\n8) Thanh Dock chính nền kính mờ Glassmorphism với viền mỏng sắc nét.\n9) Thuật toán xem thực tế >= 10 giây tự chèn video cùng chủ đề vào vị trí kế tiếp và nạp sẵn bên dưới.\n10) Sửa lỗi giựt màn hình Home sau khi kết thúc logo Intro khi mở app.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-release.apk",
-  "sha256": "0c882455d7740c4eb54b13a3243ce2c4cdc3ef29593cca9fdab5947126546f4d",
+  "versionCode": 10870,
+  "versionName": "0.1.87",
+  "buildTimestamp": "2026-11-27T17:56:47Z",
+  "releaseNotes": "Tinh chỉnh UI/UX zTok, zBe & Glass Dock v0.1.87 (Build 10870):\n1) zTok chuyển video không giựt thu phóng nhờ giữ cố định PlatformView (GlobalKey) & biến đổi khung hình bằng GPU TextureView Matrix.\n2) Thanh Top Bar zTok thanh mảnh như TikTok gốc kèm dropdown chọn chủ đề ngay trên tab For You ▾; đa dạng chủ đề Ca nhạc (không thiên nhạc sàn/remix), chống lặp nhiều video liên tiếp cùng 1 kênh.\n3) Sửa triệt để lỗi khung viền kép của Dock dưới, tinh chỉnh kính mờ siêu trong (Clear Glassmorphism).\n4) zBe vuốt/nhấn Back tự thu nhỏ xuống cửa sổ PiP góc dưới.\n5) Phụ đề song ngữ AI trong zBe neo mượt bằng AnimatedSize + AnimatedSwitcher, hết giựt nhảy dòng khi chuyển câu.\n6) Thông báo tự phát video tiếp theo đồng bộ UI/UX kính mờ zFim và tự ẩn sau 2 giây.\n7) Đồng bộ cookie TikTok & nâng cấp VodAudioLookAheadExtractor sang OkHttpDataSource/proxy chuẩn để AI Sub/Dub dịch đúng tuyệt đối âm thanh video TikTok đang phát.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-release.apk",
+  "sha256": "398581fd5776aea793f437e89cc5a61af1327c8087bd593578fc48aef20ca99a",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10860,
-      "versionName": "0.1.86",
+      "versionCode": 10870,
+      "versionName": "0.1.87",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.86/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "0c882455d7740c4eb54b13a3243ce2c4cdc3ef29593cca9fdab5947126546f4d",
-  "sha256_armeabi-v7a": "1b61d805414ff655ce083ad0b95e6f778e50893205224642285d80d7c9578698",
-  "sha256_arm64": "698208d0590c3c5f46586b45b5b0f68bc1a89b496d0e4fd4f8c9ac4d4a1bea3b",
-  "sha256_x86_64": "9556b37cb1ce55ce61ad5407c815977951c0b078b722572894a527b6da0809d9",
+  "sha256_universal": "398581fd5776aea793f437e89cc5a61af1327c8087bd593578fc48aef20ca99a",
+  "sha256_armeabi-v7a": "3dc591e30efe89b4503032c40fb3cedbc9c656e7dc7c845c28086b624d4479e2",
+  "sha256_arm64": "356f3fc5ef2d7fdb0387d608dacd3af8485357cbe35cbb6c972e313dd69ebd60",
+  "sha256_x86_64": "d666ca57bb745dbfb7ec9eeaede7ba4b8eeec9fe077ebc9dda5e22c1ff2286dd",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
