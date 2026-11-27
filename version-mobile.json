@@ -1,14 +1,14 @@
 {
-  "versionCode": 10810,
-  "versionName": "0.1.81",
-  "buildTimestamp": "2026-11-27T03:51:16Z",
-  "releaseNotes": "Cập nhật zBe AI Phụ Đề & Thuyết Minh Thời Gian Thực v0.1.81 (Build 10810):\n1) Phân biệt màu phụ đề trực quan: phụ đề gốc YouTube hiển thị màu Vàng (#FEE140), phụ đề dịch AI / Live ASR hiển thị màu Trắng (#FFFFFF), và tự động chuyển sang nhận diện thoại (Live ASR) khi video YouTube không có sẵn phụ đề.\n2) Tối ưu độ trễ thuyết minh AI (max lag <= 1 giây): cắt giảm khoảng lặng đầu/cuối câu TTS, tổng hợp gối đầu không bị ngắt, tự động bỏ qua câu đã quá hạn để tiếng thuyết minh luôn khớp sát phụ đề đang chạy.\n3) Nâng cấp bộ lọc ngữ cảnh & tự nhiên hóa xưng hô tiếng Việt cho phim ngắn AI trên Facebook (người kể ngôi thứ 3 & các cặp quan hệ gia đình/cấp bậc).\n4) Bổ sung hàng rào pre-roll 10–15s khi người dùng chủ động bật Phụ đề AI / Thuyết minh trên zBe (YouTube mặc định phát ngay khi mở), cho phép hệ thống sẵn sàng phụ đề & âm thanh thuyết minh trước khi phát tiếp (có nút Phát ngay).",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.81/app-release.apk",
-  "sha256": "66f38b9f294f3d1fe067d22c28e82022ed5b4e22a6015a234fdc7fbb1a7b2bdd",
+  "versionCode": 10820,
+  "versionName": "0.1.82",
+  "buildTimestamp": "2026-11-27T07:05:40Z",
+  "releaseNotes": "Cập nhật zBe Phase 4 & Tối ưu đồng bộ AI / Giao diện v0.1.82 (Build 10820):\n1) Tối ưu readiness barrier động (chỉ hiển thị icon xoay loading gọn gàng, tự phát ngay khi câu thoại & TTS đầu tiên sẵn sàng) và sửa lỗi tua bị giựt đọc gộp câu.\n2) Bố cục lại màn hình phát link dán: tiêu đề ngắn gọn, bỏ dòng giới thiệu rườm rà, icon-only cho Thích / Chỉ âm thanh / Xem sau, thanh Chọn file / Dán link / Mở video gọn đẹp.\n3) Nâng cấp tab Khám phá, Thịnh hành, Âm nhạc, Tin tức, Thể thao... tự động cập nhật nội dung mới theo thời gian thực.\n4) Sửa triệt để lỗi xóa lịch sử xem Global bị hồi sinh khi mở lại app (tombstone CloudSync).\n5) Hoàn thiện Giai đoạn 4 plan zBe: đăng nhập YouTube tùy chọn qua OAuth2 TV Device Code, mở video 18+, polish focus D-pad TV & phím tắt Desktop.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.82/app-release.apk",
+  "sha256": "c9d2564638dfdf5c0359c419a7e956c04124c74812fa71ddc4bf728705e90166",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10810,
-      "versionName": "0.1.81",
+      "versionCode": 10820,
+      "versionName": "0.1.82",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.81/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.81/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.81/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.81/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.82/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.82/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.82/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.82/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "66f38b9f294f3d1fe067d22c28e82022ed5b4e22a6015a234fdc7fbb1a7b2bdd",
-  "sha256_armeabi-v7a": "182fcb1e43ca259926f88e144fcbf6a2bd7a94fdb57012679b2a924564007680",
-  "sha256_arm64": "64e55badf3144faadfc5371957fe9599c160b329070f4fc1023693776afec25f",
-  "sha256_x86_64": "b395b952ddc4e7f1ec3e008a1d61ec41ade15aa7d8b0160d1f9dc98790274e42",
+  "sha256_universal": "c9d2564638dfdf5c0359c419a7e956c04124c74812fa71ddc4bf728705e90166",
+  "sha256_armeabi-v7a": "b56a6c3a25853a006890d57b1754273e30c2a37168b451ef0d11cdf6be9f7260",
+  "sha256_arm64": "deb239a258877dadeb37da816d05ae5f660f7e8f88ecb90369318a58419e400e",
+  "sha256_x86_64": "ef3d98e604c53ef55799739aff6dc688b861b7da2e48c786f50824dbc51fb8a7",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
