@@ -1,14 +1,14 @@
 {
-  "versionCode": 10830,
-  "versionName": "0.1.83",
-  "buildTimestamp": "2026-11-27T10:06:28Z",
-  "releaseNotes": "Cập nhật zTok & Bố cục Dock + Tìm kiếm mới v0.1.83 (Build 10830):\n1) Tích hợp mới zTok: trình xem video ngắn TikTok đơn giản, gọn nhẹ, không cần đăng nhập, chặn quảng cáo & TikTok Shop, hỗ trợ AI Sub/Dub trực tiếp.\n2) Giữ tab Livestream, bổ sung tab Yêu thích cục bộ (Kênh yêu thích & Video đã thích), xem bình luận & trang kênh tác giả.\n3) Hỗ trợ phát nền tắt màn hình và nhấn nút Tăng âm lượng khi tắt màn hình để chuyển sang video kế tiếp.\n4) Tự động chuyển video sau N lần lặp lại (mặc định 3 lần, cho phép nhập tùy chỉnh trong Thiết lập > zTok).\n5) Bố cục lại thanh Dock: Tizi | Kho | zFim | zBe | zTok; tích hợp Chợ Fim vào icon kính lúp (tự bung bàn phím & có nút tích 'Tìm tất cả nguồn').",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.83/app-release.apk",
-  "sha256": "275a00dbdf8a2e896f5c86b8f55f597b06cb197ae774295f006c30464a39a70e",
+  "versionCode": 10840,
+  "versionName": "0.1.84",
+  "buildTimestamp": "2026-11-27T10:50:54Z",
+  "releaseNotes": "Sửa lỗi & nâng cấp toàn diện zTok v0.1.84 (Build 10840):\n1) Tìm kiếm zTok: sửa kẹt xoay vòng (hỗ trợ item_list & fallback TikWM), trả video tức thì.\n2) Chuyển tab & làm mới: giữ bộ nhớ đã xem, bấm tab Khám phá / For You / LIVE nạp luồng video mới.\n3) Gợi ý video tương tự: kết hợp bộ xếp hạng sở thích tại máy + truy vấn video tương tự theo chủ đề/hashtag khi thích hoặc xem lâu.\n4) Vuốt cạnh Back bên trong zTok (từ Tìm kiếm, Bình luận, LIVE, Yêu thích, kênh) lùi từng bước về trang Khám phá zTok trước khi thoát về zFim.\n5) Trang chủ kênh TikTok hiển thị đầy đủ lưới video thay vì 1 video.\n6) Bình luận chia đôi màn hình: thu nhỏ video đang phát lên trên để vừa xem vừa đọc bình luận.\n7) Tắt màn hình vẫn phát âm thanh nền ổn định (tách AudioFocus về BackgroundMediaService + giữ WakeLock mạng).\n8) Trang xác minh bảo mật TikTok: bật wide viewport thu gọn vừa màn hình điện thoại và ẩn Dock phía dưới khi xác minh.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.84/app-release.apk",
+  "sha256": "2fe1a37e4a88e5993907a5e9529c66a91880c8442835be85828f1d274736d76d",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10830,
-      "versionName": "0.1.83",
+      "versionCode": 10840,
+      "versionName": "0.1.84",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.83/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.83/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.83/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.83/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.84/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.84/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.84/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.84/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "275a00dbdf8a2e896f5c86b8f55f597b06cb197ae774295f006c30464a39a70e",
-  "sha256_armeabi-v7a": "bda1249fb1ba39ad0553a00cd25130212bfbddec6b91994c527a6fb6ae5fa03e",
-  "sha256_arm64": "4c24c6aca372bf9911880eba5f839eb9a5dfdedc63e05a810c3f2ae8dec5c873",
-  "sha256_x86_64": "244266e2b9f967812bfb5edf9864a8f694144758ff839ce0cde667fe9098d054",
+  "sha256_universal": "2fe1a37e4a88e5993907a5e9529c66a91880c8442835be85828f1d274736d76d",
+  "sha256_armeabi-v7a": "60d5cc256ebcc4bf6b8e7ce18e6c9221472262b44fc2f422829756e08a5cdd1f",
+  "sha256_arm64": "83e2fc0073af74322f394a439983e70205b2452327aef03e6d81105c0d7b3065",
+  "sha256_x86_64": "6be46989906542838715f0070c171329b026af0ade4273c70569be352f7acbce",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
