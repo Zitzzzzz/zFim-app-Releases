@@ -1,14 +1,14 @@
 {
-  "versionCode": 10900,
-  "versionName": "0.1.90",
-  "buildTimestamp": "2026-11-28T06:00:27Z",
-  "releaseNotes": "Sửa lỗi toàn diện AI Phụ đề, Chọn Xưng hô, Scale video ngang & Mất tiếng v0.1.90 (Build 10900):\n1) Phụ đề AI không còn tự động tắt khi người dùng bật CC lúc đang Thuyết minh AI; hiển thị cửa sổ cue bất đối xứng [-120ms, +280ms] và vạch xanh vùng đã dịch trực tiếp trên ZBeWatchPage.\n2) Bổ sung chọn nhanh 5 chế độ Thể loại & Xưng hô Thuần Việt (Tự động / Cổ trang / Hiện đại / Anime / Review) và nút Phát phụ đề sang TV (LAN / QR) ngay tại Thẻ dán link, Thanh công cụ ZBeWatchPage, Bảng Phụ đề/Thuyết minh & zAi Fim.\n3) Xóa hoàn toàn tính năng scale/zoom video trong Cài đặt & trình phát; khóa khung hình zTok ExoPlayer chờ đúng VideoSize trước khi hiện frame đầu tiên để hết dứt điểm lỗi phóng to rồi giật về khung gốc ở video ngang.\n4) Khắc phục lỗi mất tiếng khi phát video bằng proxy hóa external audioUrl + fallback tự động về luồng muxed khi thiếu audio track, bật MediaCodec fallback trên ExoPlayer và sửa rò rỉ trạng thái mute.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-release.apk",
-  "sha256": "89fa2c782613caee7509d6733294493180c8f8942d50f961780898766626266e",
+  "versionCode": 10910,
+  "versionName": "0.1.91",
+  "buildTimestamp": "2026-11-28T07:40:24Z",
+  "releaseNotes": "Sửa lỗi triệt để zTok mất tiếng dần khi lướt & lỗi scale giật khung hình video ngang v0.1.91 (Build 10910):\n1) Chặn rò rỉ AudioTrack trên kiến trúc 2 slot ExoPlayer của zTok: tự động ngắt C.TRACK_TYPE_AUDIO và dừng/giải phóng player cũ ở slot nền khi chuyển video để không còn cạn tài nguyên AudioFlinger/AudioTrack khi lướt nhiều video; thêm cơ chế tự tái tạo AudioSink khi gặp lỗi AudioSinkError/AudioCodecError, chống async race ghi đè trạng thái mute khi preload, và chỉ thử URL dự phòng khác path/encoding nếu luồng gốc thiếu track âm thanh.\n2) Khóa khung hình gốc đồng bộ trên ZTokVideoSurfaceView: khởi tạo TextureView với kích thước ẩn (alpha=0f, giữ SurfaceTexture hoạt động), tính tỷ lệ tính cả góc xoay (unappliedRotationDegrees), và CHỈ hiện hình khi addOnLayoutChangeListener xác nhận TextureView đã layout đúng kích thước (expectedW, expectedH), loại bỏ hoàn toàn hiện tượng video ngang bị kéo đứng rồi giật ngược lại 1 giây khi chuyển từ video đứng.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-release.apk",
+  "sha256": "75f0c32659d969453c6b2f359b32c3706a7bbd69934366f093582ddc7c3e8214",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10900,
-      "versionName": "0.1.90",
+      "versionCode": 10910,
+      "versionName": "0.1.91",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "89fa2c782613caee7509d6733294493180c8f8942d50f961780898766626266e",
-  "sha256_armeabi-v7a": "9e219b9ad1ecdef277d375da87b4e36a357a4ce45cff6aeaa73919917f3ff415",
-  "sha256_arm64": "6f55baee6c47ed5d514db905e570211529bccb599383143e2816b2413d7ffae4",
-  "sha256_x86_64": "be2da0203b8aa0f4725aeb4b1efeafdda06911ff8e506e8432bae15ba430893c",
+  "sha256_universal": "75f0c32659d969453c6b2f359b32c3706a7bbd69934366f093582ddc7c3e8214",
+  "sha256_armeabi-v7a": "be072c18f02783cb43ba788d85cac2e549cb64ed4312c9fedc758e13ed1c97c9",
+  "sha256_arm64": "1e7bc174903e391ce18599ae7406d4bcfd0d7d88b44eac18589d7895ddafa0b4",
+  "sha256_x86_64": "9bfc239f8c8d63a58c1418fefdadb91eca3f565e1bae3700975c3c75a50f59aa",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
