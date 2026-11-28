@@ -1,14 +1,14 @@
 {
-  "versionCode": 10890,
-  "versionName": "0.1.89",
-  "buildTimestamp": "2026-11-28T05:02:03Z",
-  "releaseNotes": "Nâng cấp toàn diện AI Phụ đề, Xưng hô Thuần Việt & Tốc độ tải Facebook P1-P4 v0.1.89 (Build 10890):\n1) P1 — Sửa lỗi mất 2-3 câu khi tua (bigJump _performSeek), bổ sung Pre-VAD Soft AGC (+20dB) & Silero VAD nhạy giọng nhỏ xuống -55 dBFS, cùng khóa Xưng hô 5 thể loại (Tự động / Cổ trang Ta-Ngươi / Hiện đại Anh-Em / Anime / Review) nhất quán suốt tập phim.\n2) P2 — Đua song song tách link Facebook (<4.5s + Cache 15 phút + dùng luồng SD cho ASR), tối ưu buffer libmpv tải nhanh & tua mượt, giải mã Look-ahead Burst 4.0x và phát tức thì 2 câu đầu sau khởi tạo/tua.\n3) P3 — OrderedTranslationQueue đảm bảo dịch đúng thứ tự thời gian, thanh Seekbar hiển thị vùng đã dịch AI, chọn nhanh Xưng hô ngay từ Thẻ dán link & Player, cửa sổ cue bất đối xứng [-120ms, +280ms] mượt mà.\n4) P4 — Bổ sung AiCompanionRelayServer phát phụ đề AI qua LAN/WebSocket (/ws/companion + QR pairing) sẵn sàng đẩy phụ đề từ điện thoại sang TV.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-release.apk",
-  "sha256": "caa4d1f5f50c3f8935bc6489066c19db1b6b130e8c932fe93f82a05247c1f1f5",
+  "versionCode": 10900,
+  "versionName": "0.1.90",
+  "buildTimestamp": "2026-11-28T06:00:27Z",
+  "releaseNotes": "Sửa lỗi toàn diện AI Phụ đề, Chọn Xưng hô, Scale video ngang & Mất tiếng v0.1.90 (Build 10900):\n1) Phụ đề AI không còn tự động tắt khi người dùng bật CC lúc đang Thuyết minh AI; hiển thị cửa sổ cue bất đối xứng [-120ms, +280ms] và vạch xanh vùng đã dịch trực tiếp trên ZBeWatchPage.\n2) Bổ sung chọn nhanh 5 chế độ Thể loại & Xưng hô Thuần Việt (Tự động / Cổ trang / Hiện đại / Anime / Review) và nút Phát phụ đề sang TV (LAN / QR) ngay tại Thẻ dán link, Thanh công cụ ZBeWatchPage, Bảng Phụ đề/Thuyết minh & zAi Fim.\n3) Xóa hoàn toàn tính năng scale/zoom video trong Cài đặt & trình phát; khóa khung hình zTok ExoPlayer chờ đúng VideoSize trước khi hiện frame đầu tiên để hết dứt điểm lỗi phóng to rồi giật về khung gốc ở video ngang.\n4) Khắc phục lỗi mất tiếng khi phát video bằng proxy hóa external audioUrl + fallback tự động về luồng muxed khi thiếu audio track, bật MediaCodec fallback trên ExoPlayer và sửa rò rỉ trạng thái mute.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-release.apk",
+  "sha256": "89fa2c782613caee7509d6733294493180c8f8942d50f961780898766626266e",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10890,
-      "versionName": "0.1.89",
+      "versionCode": 10900,
+      "versionName": "0.1.90",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.90/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "caa4d1f5f50c3f8935bc6489066c19db1b6b130e8c932fe93f82a05247c1f1f5",
-  "sha256_armeabi-v7a": "042d23de55b615038dd7c67a951c2515dd1ab7c758b473f74f5f305702b3f6b5",
-  "sha256_arm64": "a378048d3785b7ff948de1460472acdf49e0369f66d970af04ffb8b52b3ff810",
-  "sha256_x86_64": "3231de6c03a5fd0f7a270e53b57810e6bef8614cb2faf50aca552fd3df6d676a",
+  "sha256_universal": "89fa2c782613caee7509d6733294493180c8f8942d50f961780898766626266e",
+  "sha256_armeabi-v7a": "9e219b9ad1ecdef277d375da87b4e36a357a4ce45cff6aeaa73919917f3ff415",
+  "sha256_arm64": "6f55baee6c47ed5d514db905e570211529bccb599383143e2816b2413d7ffae4",
+  "sha256_x86_64": "be2da0203b8aa0f4725aeb4b1efeafdda06911ff8e506e8432bae15ba430893c",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
