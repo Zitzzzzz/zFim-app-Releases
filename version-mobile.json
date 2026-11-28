@@ -1,14 +1,14 @@
 {
-  "versionCode": 10930,
-  "versionName": "0.1.93",
-  "buildTimestamp": "2026-11-28T10:28:11Z",
-  "releaseNotes": "Sửa triệt để lỗi video màn hình đen + mất tiếng & lỗi giật chớp khi chuyển/fallback video zTok v0.1.93 (Build 10930):\n1) Sửa tận gốc lỗi màn hình đen + mất tiếng (9/9 ca [PENDING] trên máy thật ngay sau video bật MUSIC_MUX_FALLBACK):\n   - Vá race condition trong ZTokExoEngine: khi stop() slot preload còn lại luôn xóa sạch videoId/url và đồng bộ onSlotInvalidated(slot, videoId), kết hợp kiểm tra playbackState != STATE_IDLE && mediaItemCount > 0 trong activateSlot;\n   - Khi reload cùng videoId (NO_AUDIO_FALLBACK / MUSIC_MUX_FALLBACK), giữ nguyên slot preload kế tiếp và không nháy đen alpha=0.\n2) Chống giật chớp & xử lý audio ngầm ngay trong lúc Preload:\n   - checkActiveAudioTracks chạy ngay ở chế độ preload (tracking theo videoId:isPreload) để đổi URL / ghép musicPlayUrl ngầm trước khi người dùng vuốt tới;\n   - Chặn gọi lại exoPlayer.setVideoTextureView trong activateSlot khi đã bind sẵn, và chạy animation chuyển cảnh bằng native ValueAnimator (commitTransition) thay cho IPC 60fps.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.93/app-release.apk",
-  "sha256": "d877c3a5763b70f70f264486d436545aa344f9b060827fa40189b5825389b7bf",
+  "versionCode": 10940,
+  "versionName": "0.1.94",
+  "buildTimestamp": "2026-11-28T15:09:21Z",
+  "releaseNotes": "Cập nhật zFim Mobile v0.1.94 (Build 10940) — Fix lặp tự chuyển zTok, tùy chọn hiệu ứng chuyển cảnh, tăng tốc tải zBe & giao diện Hallmark:\n1) Sửa triệt để lỗi tự chuyển video bị pause sau 2-3 lần lặp & thêm mốc 0 lặp / 1 lần lặp:\n   - Fix ExoPlayer STATE_ENDED + đồng bộ hàng đợi _pendingAutoNextOnBatch để không bị đứng máy ở cuối vòng lặp;\n   - Tách công tắc Bật/Tắt tự chuyển khỏi số lần lặp, bổ sung '0 lặp (hết là Next)' và '1 lần lặp'.\n2) Thêm thiết lập Hiệu ứng chuyển video (mặc định Không chuyển động):\n   - Tùy chọn Không chuyển động (none), Mờ dần tại chỗ (fade), và Lướt lên/xuống (slide) qua native ZTokDualVideoSurfaceView trong Quick Settings và Cài đặt zTok.\n3) Tăng tốc tải trang zBe ban đầu (từ 10-15s xuống <1-2s):\n   - Tải song song + trả sớm batch đầu qua onPartial, tách lịch sử khỏi blocking UI, cache SWR bằng SharedPreferences (zbe_home_feed_cache_v1) và in-memory cache.\n4) Thiết kế lại bố cục zTok tối giản (Hallmark):\n   - Bỏ dòng badge Lặp/Tự chuyển, thay bằng thanh icon ngang (Tim | Bình luận | Tải về | AI | Nghe) không nhãn text;\n   - Đặt Avatar + nút '+' ngay trên tên hiển thị chủ kênh (authorNickname), thu gọn dot thanh thời gian (1.4px / 4.5px) và giảm độ chói toàn bộ icon.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.94/app-release.apk",
+  "sha256": "f2ec80273144bdb99150186463d46c5ecc49706e0985f029aa4728d73300e1f6",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10930,
-      "versionName": "0.1.93",
+      "versionCode": 10940,
+      "versionName": "0.1.94",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.93/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.93/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.93/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.93/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.94/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.94/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.94/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.94/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "d877c3a5763b70f70f264486d436545aa344f9b060827fa40189b5825389b7bf",
-  "sha256_armeabi-v7a": "8bc2c67a35e533e7eb434082ddd83a8a0eacc17521a46d544b12bb0f108fe7fd",
-  "sha256_arm64": "9630b895114b31d20ccfe0f8a32a727c09b919be5ee2fe1fabe8e086de866cb9",
-  "sha256_x86_64": "375ac9853e70e510f52abd9be9c0ee57ee5f2898b38029a3de9a9210b86a6893",
+  "sha256_universal": "f2ec80273144bdb99150186463d46c5ecc49706e0985f029aa4728d73300e1f6",
+  "sha256_armeabi-v7a": "bfbfc2f599e316badb8e69909f51b84e049986060f2cc57647e8fc654b870043",
+  "sha256_arm64": "3ca768e5d8c65fe5b51477d8a9ab5d58e4b1453c3543ab01aa84fc8211ee52d7",
+  "sha256_x86_64": "e2aabd086cebfb393317de82305e37163e42e35998cdcb3fb7874922cbb0a157",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
