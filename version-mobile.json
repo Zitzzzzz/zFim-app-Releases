@@ -1,14 +1,14 @@
 {
-  "versionCode": 10870,
-  "versionName": "0.1.87",
-  "buildTimestamp": "2026-11-27T17:56:47Z",
-  "releaseNotes": "Tinh chỉnh UI/UX zTok, zBe & Glass Dock v0.1.87 (Build 10870):\n1) zTok chuyển video không giựt thu phóng nhờ giữ cố định PlatformView (GlobalKey) & biến đổi khung hình bằng GPU TextureView Matrix.\n2) Thanh Top Bar zTok thanh mảnh như TikTok gốc kèm dropdown chọn chủ đề ngay trên tab For You ▾; đa dạng chủ đề Ca nhạc (không thiên nhạc sàn/remix), chống lặp nhiều video liên tiếp cùng 1 kênh.\n3) Sửa triệt để lỗi khung viền kép của Dock dưới, tinh chỉnh kính mờ siêu trong (Clear Glassmorphism).\n4) zBe vuốt/nhấn Back tự thu nhỏ xuống cửa sổ PiP góc dưới.\n5) Phụ đề song ngữ AI trong zBe neo mượt bằng AnimatedSize + AnimatedSwitcher, hết giựt nhảy dòng khi chuyển câu.\n6) Thông báo tự phát video tiếp theo đồng bộ UI/UX kính mờ zFim và tự ẩn sau 2 giây.\n7) Đồng bộ cookie TikTok & nâng cấp VodAudioLookAheadExtractor sang OkHttpDataSource/proxy chuẩn để AI Sub/Dub dịch đúng tuyệt đối âm thanh video TikTok đang phát.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-release.apk",
-  "sha256": "398581fd5776aea793f437e89cc5a61af1327c8087bd593578fc48aef20ca99a",
+  "versionCode": 10880,
+  "versionName": "0.1.88",
+  "buildTimestamp": "2026-11-28T03:04:01Z",
+  "releaseNotes": "Nâng cấp chất lượng, tải xuống & chế độ tai nghe zTok v0.1.88 (Build 10880):\n1) Bỏ scale/zoom video & bỏ ảnh nền bù trên video ngang: giữ chuẩn 100% tỷ lệ khung hình gốc trên nền đen, truyền kích thước hint từ feed + ẩn frame cho tới khi render frame đầu tiên nên chuyển video hết hẳn giựt co giãn.\n2) Bổ sung nút Tải về trên zTok: tải Video HD (.mp4 vào Movies/zTok) hoặc tách Âm thanh (.m4a vào Music/zTok) lưu trực tiếp vào thư viện máy.\n3) Thay icon âm thanh bằng icon tai nghe (Nghe audio): tắt hẳn bộ giải mã video, chỉ phát âm thanh với màn hình đen tiết kiệm pin tối đa; hỗ trợ vuốt lên/xuống đổi bài và nhấn 2 lần lên màn hình để mở lại video.\n4) Thanh tiến trình chạy êm 60fps bằng nội suy Ticker thay vì nhảy nấc theo chu kỳ 180ms.\n5) Tối ưu chất lượng video: ưu tiên độ phân giải 1080p/720p sắc nét (HEVC/H.264), bật tham số HD trên TikWM và giữ đủ metadata chất lượng trong sniffer.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-release.apk",
+  "sha256": "a9ab45c2f563c210448f95b7a798f532ea9e47e127fc1779d545b5d00f6cbad2",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10870,
-      "versionName": "0.1.87",
+      "versionCode": 10880,
+      "versionName": "0.1.88",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.87/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "398581fd5776aea793f437e89cc5a61af1327c8087bd593578fc48aef20ca99a",
-  "sha256_armeabi-v7a": "3dc591e30efe89b4503032c40fb3cedbc9c656e7dc7c845c28086b624d4479e2",
-  "sha256_arm64": "356f3fc5ef2d7fdb0387d608dacd3af8485357cbe35cbb6c972e313dd69ebd60",
-  "sha256_x86_64": "d666ca57bb745dbfb7ec9eeaede7ba4b8eeec9fe077ebc9dda5e22c1ff2286dd",
+  "sha256_universal": "a9ab45c2f563c210448f95b7a798f532ea9e47e127fc1779d545b5d00f6cbad2",
+  "sha256_armeabi-v7a": "caadaa9f34097e07119a0a03b6376396d405063266e37d7b53afa0c87d8785b2",
+  "sha256_arm64": "e7e72c431bd5f2b077877dd46eefc1d20d59b7027ba2fe541ef5e288185117e9",
+  "sha256_x86_64": "0134e7b059074015511ca31877c9c9e993982b83d6e53e845ad05401dcee2c8b",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
