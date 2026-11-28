@@ -1,14 +1,14 @@
 {
-  "versionCode": 10910,
-  "versionName": "0.1.91",
-  "buildTimestamp": "2026-11-28T07:40:24Z",
-  "releaseNotes": "Sửa lỗi triệt để zTok mất tiếng dần khi lướt & lỗi scale giật khung hình video ngang v0.1.91 (Build 10910):\n1) Chặn rò rỉ AudioTrack trên kiến trúc 2 slot ExoPlayer của zTok: tự động ngắt C.TRACK_TYPE_AUDIO và dừng/giải phóng player cũ ở slot nền khi chuyển video để không còn cạn tài nguyên AudioFlinger/AudioTrack khi lướt nhiều video; thêm cơ chế tự tái tạo AudioSink khi gặp lỗi AudioSinkError/AudioCodecError, chống async race ghi đè trạng thái mute khi preload, và chỉ thử URL dự phòng khác path/encoding nếu luồng gốc thiếu track âm thanh.\n2) Khóa khung hình gốc đồng bộ trên ZTokVideoSurfaceView: khởi tạo TextureView với kích thước ẩn (alpha=0f, giữ SurfaceTexture hoạt động), tính tỷ lệ tính cả góc xoay (unappliedRotationDegrees), và CHỈ hiện hình khi addOnLayoutChangeListener xác nhận TextureView đã layout đúng kích thước (expectedW, expectedH), loại bỏ hoàn toàn hiện tượng video ngang bị kéo đứng rồi giật ngược lại 1 giây khi chuyển từ video đứng.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-release.apk",
-  "sha256": "75f0c32659d969453c6b2f359b32c3706a7bbd69934366f093582ddc7c3e8214",
+  "versionCode": 10920,
+  "versionName": "0.1.92",
+  "buildTimestamp": "2026-11-28T08:35:03Z",
+  "releaseNotes": "Sửa triệt để lỗi video mất tiếng, lỗi xé hình khi chuyển video & Bổ sung Diagnostic Log HUD v0.1.92 (Build 10920):\n1) Khắc phục tận gốc 3 nguyên nhân mất tiếng trên zTok phát sinh từ v0.1.88–v0.1.91:\n   - Khôi phục ưu tiên luồng H.264 trên cùng độ phân giải (v0.1.88 tăng điểm ByteVC1/HEVC gây chọn luồng video-only không audio);\n   - Bỏ bật/tắt C.TRACK_TYPE_AUDIO động khi preload gây kẹt AudioTrack trên máy thật, thay bằng mute/pause sạch + AudioFocus tập trung + Watchdog 1200ms tự phục hồi;\n   - Bổ sung MUSIC_MUX_FALLBACK (MergingMediaSource) tự ghép musicPlayUrl đồng bộ khi luồng video MP4 gốc hoàn toàn không có audio track (aGrp=0).\n2) Chống xé hình 100% khi chuyển video: gộp 2 slot thành 1 PlatformView duy nhất (ZTokDualVideoSurfaceView) trượt đồng bộ trên native RenderNode + pre-layout khung hình theo hintRatio, loại bỏ hoàn toàn hiện tượng tráo Z-order AndroidView và Opacity SaveLayer trong Flutter.\n3) Bổ sung nút Diagnostic Log HUD (icon bug trên thanh TopBar zTok): xem realtime đầy đủ thông số audio (grp/sel/init/codec/sampleRate/Focus/SysVol), thông số khung hình (decoded/textureBounds/firstFrameMs), và nút Copy / Lưu file .log để thu thập log máy thật nếu cần.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.92/app-release.apk",
+  "sha256": "492d3bc43f7d4d43968dec4b6d096cf75a9c1ba4e4cfd937567f242427b07712",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10910,
-      "versionName": "0.1.91",
+      "versionCode": 10920,
+      "versionName": "0.1.92",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.91/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.92/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.92/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.92/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.92/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "75f0c32659d969453c6b2f359b32c3706a7bbd69934366f093582ddc7c3e8214",
-  "sha256_armeabi-v7a": "be072c18f02783cb43ba788d85cac2e549cb64ed4312c9fedc758e13ed1c97c9",
-  "sha256_arm64": "1e7bc174903e391ce18599ae7406d4bcfd0d7d88b44eac18589d7895ddafa0b4",
-  "sha256_x86_64": "9bfc239f8c8d63a58c1418fefdadb91eca3f565e1bae3700975c3c75a50f59aa",
+  "sha256_universal": "492d3bc43f7d4d43968dec4b6d096cf75a9c1ba4e4cfd937567f242427b07712",
+  "sha256_armeabi-v7a": "a968ddc78220c3aab009b1993b630e50db2e483d3bc08b87093e6d86a9c7f640",
+  "sha256_arm64": "f031a91dbf523bc00c8a5a7de2dbbdac3b9282c4e2b3f1fc9c8e56b2b908a247",
+  "sha256_x86_64": "5461efd93a9cbd87bd0cd6b5fab6e1bedd9c8d3c283f77df2e44a678810f5dc9",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
