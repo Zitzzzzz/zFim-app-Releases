@@ -1,14 +1,14 @@
 {
-  "versionCode": 10880,
-  "versionName": "0.1.88",
-  "buildTimestamp": "2026-11-28T03:04:01Z",
-  "releaseNotes": "Nâng cấp chất lượng, tải xuống & chế độ tai nghe zTok v0.1.88 (Build 10880):\n1) Bỏ scale/zoom video & bỏ ảnh nền bù trên video ngang: giữ chuẩn 100% tỷ lệ khung hình gốc trên nền đen, truyền kích thước hint từ feed + ẩn frame cho tới khi render frame đầu tiên nên chuyển video hết hẳn giựt co giãn.\n2) Bổ sung nút Tải về trên zTok: tải Video HD (.mp4 vào Movies/zTok) hoặc tách Âm thanh (.m4a vào Music/zTok) lưu trực tiếp vào thư viện máy.\n3) Thay icon âm thanh bằng icon tai nghe (Nghe audio): tắt hẳn bộ giải mã video, chỉ phát âm thanh với màn hình đen tiết kiệm pin tối đa; hỗ trợ vuốt lên/xuống đổi bài và nhấn 2 lần lên màn hình để mở lại video.\n4) Thanh tiến trình chạy êm 60fps bằng nội suy Ticker thay vì nhảy nấc theo chu kỳ 180ms.\n5) Tối ưu chất lượng video: ưu tiên độ phân giải 1080p/720p sắc nét (HEVC/H.264), bật tham số HD trên TikWM và giữ đủ metadata chất lượng trong sniffer.",
-  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-release.apk",
-  "sha256": "a9ab45c2f563c210448f95b7a798f532ea9e47e127fc1779d545b5d00f6cbad2",
+  "versionCode": 10890,
+  "versionName": "0.1.89",
+  "buildTimestamp": "2026-11-28T05:02:03Z",
+  "releaseNotes": "Nâng cấp toàn diện AI Phụ đề, Xưng hô Thuần Việt & Tốc độ tải Facebook P1-P4 v0.1.89 (Build 10890):\n1) P1 — Sửa lỗi mất 2-3 câu khi tua (bigJump _performSeek), bổ sung Pre-VAD Soft AGC (+20dB) & Silero VAD nhạy giọng nhỏ xuống -55 dBFS, cùng khóa Xưng hô 5 thể loại (Tự động / Cổ trang Ta-Ngươi / Hiện đại Anh-Em / Anime / Review) nhất quán suốt tập phim.\n2) P2 — Đua song song tách link Facebook (<4.5s + Cache 15 phút + dùng luồng SD cho ASR), tối ưu buffer libmpv tải nhanh & tua mượt, giải mã Look-ahead Burst 4.0x và phát tức thì 2 câu đầu sau khởi tạo/tua.\n3) P3 — OrderedTranslationQueue đảm bảo dịch đúng thứ tự thời gian, thanh Seekbar hiển thị vùng đã dịch AI, chọn nhanh Xưng hô ngay từ Thẻ dán link & Player, cửa sổ cue bất đối xứng [-120ms, +280ms] mượt mà.\n4) P4 — Bổ sung AiCompanionRelayServer phát phụ đề AI qua LAN/WebSocket (/ws/companion + QR pairing) sẵn sàng đẩy phụ đề từ điện thoại sang TV.",
+  "downloadUrl": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-release.apk",
+  "sha256": "caa4d1f5f50c3f8935bc6489066c19db1b6b130e8c932fe93f82a05247c1f1f5",
   "platforms": {
     "android_mobile": {
-      "versionCode": 10880,
-      "versionName": "0.1.88",
+      "versionCode": 10890,
+      "versionName": "0.1.89",
       "otaLocked": false
     },
     "android_tv": {
@@ -33,10 +33,10 @@
     }
   },
   "downloadUrls": {
-    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-release.apk",
-    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-armeabi-v7a-release.apk",
-    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-arm64-v8a-release.apk",
-    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.88/app-x86_64-release.apk",
+    "universal": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-release.apk",
+    "armeabi-v7a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-armeabi-v7a-release.apk",
+    "arm64-v8a": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-arm64-v8a-release.apk",
+    "x86_64": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.89/app-x86_64-release.apk",
     "macos-dmg": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.dmg",
     "macos-zip": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-macOS.zip",
     "ios": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-iOS.ipa",
@@ -45,10 +45,10 @@
     "windows-setup": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Setup.exe",
     "windows-portable": "https://github.com/Zitzzzzz/zFim-app-Releases/releases/download/v0.1.47/zFim-v0.1.47-Windows-Portable.zip"
   },
-  "sha256_universal": "a9ab45c2f563c210448f95b7a798f532ea9e47e127fc1779d545b5d00f6cbad2",
-  "sha256_armeabi-v7a": "caadaa9f34097e07119a0a03b6376396d405063266e37d7b53afa0c87d8785b2",
-  "sha256_arm64": "e7e72c431bd5f2b077877dd46eefc1d20d59b7027ba2fe541ef5e288185117e9",
-  "sha256_x86_64": "0134e7b059074015511ca31877c9c9e993982b83d6e53e845ad05401dcee2c8b",
+  "sha256_universal": "caa4d1f5f50c3f8935bc6489066c19db1b6b130e8c932fe93f82a05247c1f1f5",
+  "sha256_armeabi-v7a": "042d23de55b615038dd7c67a951c2515dd1ab7c758b473f74f5f305702b3f6b5",
+  "sha256_arm64": "a378048d3785b7ff948de1460472acdf49e0369f66d970af04ffb8b52b3ff810",
+  "sha256_x86_64": "3231de6c03a5fd0f7a270e53b57810e6bef8614cb2faf50aca552fd3df6d676a",
   "sha256_macos_dmg": "efa539ffd9066165ee16abf598f289b3f74d3f01b0a66945573961b6a5e783f8",
   "sha256_macos_zip": "49e0247583bba95cd836be8aead7656e5eba88aeffa44bdae93c78b5ea75b2ae",
   "sha256_ios": "f28cf0f8ba72ff13902485d034349a6c6cc1e561e68e0398cb12cc6d1aab275c",
